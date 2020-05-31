@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <div class="title">
+        <h1>{{data.currentSections[3]}}</h1>
+    </div>
+    <div id="container">
+        <div style="display: table-row;" *ngFor="let pair of primarySponsors">
+            <div class="cell" *ngFor="let el of pair">
+                <a href="{{el.url}}">
+                    <img class="first" src="../../../assets/img/sponsors/{{el.pictureURL}}" alt="{{el.name}}">
+                </a>
+            </div>
+        </div>
+        <!-- <div style="display: table-row;">
+            <div class="cell">
+                <img src="../../../assets/img/hyperloop2.png" alt="Hyperloop concept image">
+            </div>
+            <div class="cell">
+                <p class="mission-text" *ngFor="let el of text2">{{el}}</p>
+            </div>
+        </div> -->
+    </div>
+</div>

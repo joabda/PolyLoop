@@ -1,0 +1,37 @@
+<div class="team-container">
+    <div class="title">
+        <h1>{{data.currentSections[2]}}</h1>
+    </div>
+
+    <div id="filter">
+        <!-- <div id="assos">
+            <button mat-raised-button color="primary" (click)="filterByAssociation('NONE')"> Show all</button>
+            <button mat-raised-button color="primary" *ngFor="let asso of associations"
+                (click)="filterByAssociation(asso)">{{asso}}</button>
+        </div>
+
+        <div id="roles">
+            <button mat-raised-button color="primary" (click)="filterByRole('NONE')"> Show all roles</button>
+            <button mat-raised-button color="primary" *ngFor="let role of roles"
+                (click)="filterByRole(role)">{{role}}</button>
+        </div> -->
+    </div>
+
+    <ul>
+        <li class="member" *ngFor="let member of members">
+            <div *ngIf="!member.hidden">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title>{{member.fullName}}</mat-card-title>
+                        <mat-card-subtitle>{{member.role}} </mat-card-subtitle>
+                    </mat-card-header>
+                    <img class="member-image" mat-card-image src="{{member.pictureURL}}"
+                        alt="{{member.fullName}} profile picture">
+                    <!-- <mat-card-content>
+                        <p> {{member.description}} </p>
+                    </mat-card-content> -->
+                </mat-card>
+            </div>
+        </li>
+    </ul>
+</div>

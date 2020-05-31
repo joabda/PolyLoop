@@ -1,0 +1,32 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" (focusout)="drawer.close()"
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" mode="over" [fixedInViewport]="true" fullscreen>
+        <mat-nav-list>
+            <a *ngFor="let link of links" type="button" class="btn btn-outline-dark link" href="{{link.href}}">{{link.name}}</a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content id="content">
+        <mat-toolbar id="bar" color="primary">
+            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+                *ngIf="!isBigScreen">
+                <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+            </button>
+            <a href="#">
+                <img src="../../../assets/img/logo.png" alt="Polyloop Logo" id="logo">
+            </a>
+            <span class="fill-remaining-space"></span>
+            <nav class="nav nav-pills flex-column flex-sm-row" *ngIf="isBigScreen">
+                <li *ngFor="let link of links">
+                    <a type="button" class="btn btn-outline-dark link" href="{{link.href}}">{{link.name}}</a>
+                </li>
+                <li>
+                    <a (click)="this.switchLanguage()"> 
+                        <img id="lang-img" src="../../../assets/img/language/fr.png" alt="Language"/>
+                    </a>
+                </li>
+            </nav>
+        </mat-toolbar>
+        <ng-content></ng-content>
+    </mat-sidenav-content>
+</mat-sidenav-container>

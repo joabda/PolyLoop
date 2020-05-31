@@ -1,0 +1,22 @@
+[
+  {
+    "link": "https://www.facebook.com/PolyLoopMontreal2020/",
+    "iconSrc": "../../../assets/img/social/facebook.png",
+    "title": "Facebook Page"
+  },
+  {
+    "link": "https://www.messenger.com/t/PolyLoopMontreal2020",
+    "iconSrc": "../../../assets/img/social/messenger.png",
+    "title": "Facebook Messenger"
+  },
+  {
+    "link": "https://www.youtube.com/channel/UC1FRrcYS8QgwvWIGhyMs7DQ/featured?disable_polymer=1",
+    "iconSrc": "../../../assets/img/social/youtube.png",
+    "title": "Youtube"
+  },
+  {
+    "link": "mail:polyloop2020@gmail.com",
+    "iconSrc": "../../../assets/img/social/gmail.png",
+    "title": "Gmail"
+  }
+]

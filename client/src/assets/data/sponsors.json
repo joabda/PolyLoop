@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Polymtl",
+        "pictureURL": "poly.png",
+        "url": "https://polymtl.ca"
+    },
+    {
+        "name": "AEP",
+        "pictureURL": "aep.png",
+        "url": "https://aep.polymtl.ca"
+    },
+    {
+        "name": "spacex",
+        "pictureURL": "spacex.jpg",
+        "url": "spacex.com"
+    },
+    {
+        "name": "stm",
+        "pictureURL": "stm.png",
+        "url": "stm.ca"
+    },
+    {
+        "name": "virgin",
+        "pictureURL": "virgin.png",
+        "url": ""
+    }
+]

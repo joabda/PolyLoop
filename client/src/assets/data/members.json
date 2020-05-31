@@ -1,0 +1,27 @@
+[
+    {
+        "fullName": "member1",
+        "pictureURL": "../../../assets/img/home.jpg",
+        "role": "President"
+    },
+    {
+        "fullName": "member2",
+        "pictureURL": "../../../assets/img/home.jpg",
+        "role": "VP"
+    },
+    {
+        "fullName": "member3",
+        "pictureURL": "../../../assets/img/home.jpg",
+        "role": "VP-Sport"
+    },
+    {
+        "fullName": "member4",
+        "pictureURL": "../../../assets/img/home.jpg",
+        "role": "VP Finance"
+    },
+    {
+        "fullName": "member5",
+        "pictureURL": "../../../assets/img/home.jpg",
+        "role": "VP Organisation"
+    }
+]
