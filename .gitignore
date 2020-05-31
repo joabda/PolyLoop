@@ -106,11 +106,11 @@ dist
 #ignoring .vscode folder but we keep some files for debuging
 /.vscode/chrome
 /.vs/
+/.vs/*
 /.vscode/*
 /.vscode/**
 /.idea/*
 
-*/*.json
 package-lock.json
 .DS_Store
 
