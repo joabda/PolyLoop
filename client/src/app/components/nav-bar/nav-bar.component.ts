@@ -16,19 +16,15 @@ export class NavBarComponent implements OnInit {
   links = [
     {
       name   : '',
-      href   : '#'
+      href   : '/'
     },
     {
       name   : '',
-      href   : '#mission'
+      href   : '/team'
     },
     {
       name   : '',
-      href   : '#team'
-    },
-    {
-      name   : '',
-      href   : '#sponsors'
+      href   : '/sponsors'
     },
     {
       name   : '',

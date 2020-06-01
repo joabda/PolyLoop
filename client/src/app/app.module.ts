@@ -5,13 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSidenavModule, MatToolbarModule, MatIconModule, MatListModule, MatDialogModule, MatCardModule } from '@angular/material';
+import { MatSidenavModule, MatToolbarModule, MatIconModule, MatListModule, MatDialogModule, MatCardModule, MatAutocompleteModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { IntroComponent } from './components/intro/intro.component';
 import { DataService } from './services/data/data.service';
 import { FooterComponent } from './components/footer/footer.component';
 import { MembersComponent } from './components/members/members.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { SponsorsComponent } from './components/sponsors/sponsors.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,13 +28,17 @@ import { SponsorsComponent } from './components/sponsors/sponsors.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    MatAutocompleteModule,
     MatCardModule,
     MatDialogModule,
+    MatFormFieldModule,
     MatIconModule,
+    MatInputModule,
     MatListModule,
     MatSidenavModule,
     MatToolbarModule,
-
+    ReactiveFormsModule,
   ],
   providers: [
     DataService

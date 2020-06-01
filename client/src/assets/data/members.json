@@ -1,26 +1,31 @@
 [
     {
-        "fullName": "member1",
+        "firstName": "Jason",
+        "lastName": "LEBEAU",
         "pictureURL": "../../../assets/img/home.jpg",
         "role": "President"
     },
     {
-        "fullName": "member2",
+        "firstName": "Janette",
+        "lastName": "CHARNEAU",
         "pictureURL": "../../../assets/img/home.jpg",
         "role": "VP"
     },
     {
-        "fullName": "member3",
+        "firstName": "Kaleb",
+        "lastName": "BANG",
         "pictureURL": "../../../assets/img/home.jpg",
         "role": "VP-Sport"
     },
     {
-        "fullName": "member4",
+        "firstName": "Nicole",
+        "lastName": "PROUX",
         "pictureURL": "../../../assets/img/home.jpg",
         "role": "VP Finance"
     },
     {
-        "fullName": "member5",
+        "firstName": "Sebastien",
+        "lastName": "LOZON",
         "pictureURL": "../../../assets/img/home.jpg",
         "role": "VP Organisation"
     }

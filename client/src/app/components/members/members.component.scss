@@ -24,6 +24,18 @@
         width: auto;
     }
 
+    .searchIcon {
+        cursor: grabbing;
+    }
+
+    .field {
+        padding-top: 0.4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #dfd5d5;
+    }
+
     li {
         list-style: none;
         display: inline-block;

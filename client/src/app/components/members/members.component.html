@@ -1,6 +1,33 @@
-<div class="team-container">
+<div class="team-container" style="background: black;"> 
+
     <div class="title">
-        <h1>{{data.currentSections[2]}}</h1>
+        <h1>{{data.currentSections[1]}}</h1>
+    </div>
+
+    <div class="field">
+        <mat-form-field>
+            <input
+                matInput
+                placeholder="Search for a movie"
+                aria-label="title"
+                [matAutocomplete]="auto"
+                [formControl]="titleControl"
+                (input)="searchMovie()"
+            >
+            <mat-icon
+                class="searchIcon"
+                matSuffix
+                (click)="searchMovie()"
+            >search</mat-icon>
+            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="searchMovie()">
+                <mat-option
+                    *ngFor="let title of filteredMembers | async"
+                    [value]="title"
+                >
+                    <span>{{title}}</span>
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
     </div>
 
     <div id="filter">
@@ -18,11 +45,11 @@
     </div>
 
     <ul>
-        <li class="member" *ngFor="let member of members">
+        <li class="member" *ngFor="let member of searchedMembers">
             <div *ngIf="!member.hidden">
                 <mat-card>
                     <mat-card-header>
-                        <mat-card-title>{{member.fullName}}</mat-card-title>
+                        <mat-card-title>{{member.firstName}}</mat-card-title>
                         <mat-card-subtitle>{{member.role}} </mat-card-subtitle>
                     </mat-card-header>
                     <img class="member-image" mat-card-image src="{{member.pictureURL}}"

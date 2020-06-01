@@ -1,26 +1,7 @@
 <app-nav-bar id="main-nav"></app-nav-bar>
 
 <div class="main" (scroll)="scrollHandler($event)">
-    <section id="home">
-        <app-intro></app-intro>
-    </section>
-    
-  
-    <section id="mission">
-      <app-about-us></app-about-us>
-    </section>
-  
-    <section id="services">
-      <!-- <app-services-component></app-services-component> -->
-    </section>
-  
-    <section id="team">
-      <app-members></app-members>
-    </section>
-  
-    <section id="sponsors">
-      <!-- <app-sponsors></app-sponsors> -->
-    </section>
+    <router-outlet></router-outlet>
   
 </div> <!-- End of main -->
 

@@ -18,11 +18,11 @@
             <span class="fill-remaining-space"></span>
             <nav class="nav nav-pills flex-column flex-sm-row" *ngIf="isBigScreen">
                 <li *ngFor="let link of links">
-                    <a type="button" class="btn btn-outline-dark link" href="{{link.href}}">{{link.name}}</a>
+                    <a type="button" class="btn btn-outline-dark link" routerLink="{{link.href}}">{{link.name}}</a>
                 </li>
                 <li>
                     <a (click)="this.switchLanguage()"> 
-                        <img id="lang-img" src="../../../assets/img/language/fr.png" alt="Language"/>
+                        <img id="lang-img" src="../../../assets/img/language/FR.png" alt="Language"/>
                     </a>
                 </li>
             </nav>
