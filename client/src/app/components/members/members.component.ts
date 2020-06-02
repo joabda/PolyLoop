@@ -1,38 +1,52 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnDestroy } from '@angular/core';
 import * as _members from '../../../assets/data/members.json';
 import { Member } from 'src/app/interfaces/member';
 import { DataService } from 'src/app/services/data/data.service';
 import { FormControl } from '@angular/forms';
 import { MatInput } from '@angular/material';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
+import { HotkeysService } from 'src/app/services/hotkeys/hotkeys.service';
 
 @Component({
   selector: 'app-members',
   templateUrl: './members.component.html',
   styleUrls: ['./members.component.scss']
 })
-export class MembersComponent {
+export class MembersComponent implements OnDestroy {
 
-  members: Member[];
-  titleControl: FormControl;
-
-  searchedMembers: Member[];
-  filteredMembers: Observable<string[]>;
-  titles: string[];
+  private subscriptions: Subscription[] = [];
+  members: Member[] = (_members as any).default as Member[];
+  titleControl: FormControl = new FormControl()
+  searchedMembers: Member[] = this.members;
+  allNames: string[];
   title: string;
+  filteredMembers: Observable<string[]>;
+  @ViewChild(MatInput, { static: false }) private filter: MatInput;
 
-  constructor(public data: DataService) {
-    this.members = (_members as any).default as Member[];
-    this.searchedMembers = this.members;
-    this.titleControl = new FormControl();
-    this.titles = this.getTitles();
+  constructor(
+    public data: DataService,
+    private shortcut: HotkeysService) {
 
-    this.filteredMembers = this.titleControl.valueChanges
+      this.allNames = this.getAllNames()
+
+      this.filteredMembers = this.titleControl.valueChanges
       .pipe(
         startWith(""),
-        map((state) => state ? this._filterStates(state) : this.titles.slice())
+        map((state) => state ? this._filterStates(state) : this.allNames.slice())
       );
+
+      this.subscriptions.push(this.shortcut.addShortcut({ keys: "control.f", description: "Search" }).subscribe((event) => {
+        this.filter.focus();
+      }));
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptions.forEach(
+      subscribed => {
+        subscribed.unsubscribe();
+        this.subscriptions.pop();
+    });
   }
 
   searchMovie(): void {
@@ -43,18 +57,18 @@ export class MembersComponent {
       return;
     }
 
-    const searchTitles: string[] = this.titles.filter((element) => this.filterTitles(element));
+    const searchallNames: string[] = this.allNames.filter((element) => this.filterallNames(element));
     this.searchedMembers = new Array();
-    for (const title of searchTitles) {
+    for (const title of searchallNames) {
       this.searchedMembers.push(this.members.find((movie) => movie.firstName === title || movie.lastName === title) as Member);
     }
   }
 
-  private filterTitles(element: string): boolean {
+  private filterallNames(element: string): boolean {
     return element.toLowerCase().startsWith(this.title);
   }
 
-  private getTitles(): string[] {
+  private getAllNames(): string[] {
     let ret: string[] = [];
     for (const member of this.members) {
       ret.push(member.firstName);
@@ -66,6 +80,6 @@ export class MembersComponent {
   private _filterStates(value: string): string[] {
     const filterValue: string = value.toLowerCase();
     this.title = filterValue;
-    return this.titles.filter((title) => title.toLowerCase().indexOf(filterValue) === 0);
+    return this.allNames.filter((title) => title.toLowerCase().indexOf(filterValue) === 0);
   }
 }
