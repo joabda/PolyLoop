@@ -32,7 +32,7 @@ export class NavBarComponent implements OnInit {
     },
     {
       name   : '',
-      href   : 'https://facebook.com'
+      href   : '/contact'
     }
   ];
 
