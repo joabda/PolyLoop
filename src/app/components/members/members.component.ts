@@ -3,7 +3,7 @@ import * as _members from '../../../assets/data/members.json';
 import { Member } from 'src/app/interfaces/member';
 import { DataService } from 'src/app/services/data/data.service';
 import { FormControl } from '@angular/forms';
-import { MatInput } from '@angular/material';
+import { MatInput } from '@angular/material/input';
 import { Observable, Subscription } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { HotkeysService } from 'src/app/services/hotkeys/hotkeys.service';
@@ -22,7 +22,7 @@ export class MembersComponent implements OnDestroy {
   allNames: string[];
   title: string;
   filteredMembers: Observable<string[]>;
-  @ViewChild(MatInput, { static: false }) private filter: MatInput;
+  @ViewChild(MatInput) private filter: MatInput;
 
   constructor(
     public data: DataService,
