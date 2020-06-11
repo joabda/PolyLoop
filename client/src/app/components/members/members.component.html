@@ -8,18 +8,18 @@
         <mat-form-field>
             <input
                 matInput
-                placeholder="Search for a movie"
+                placeholder="Search for a team member"
                 aria-label="title"
                 [matAutocomplete]="auto"
                 [formControl]="titleControl"
-                (input)="searchMovie()"
+                (input)="searchMember()"
             >
             <mat-icon
                 class="searchIcon"
                 matSuffix
-                (click)="searchMovie()"
+                (click)="searchMember()"
             >search</mat-icon>
-            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="searchMovie()">
+            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="searchMember()">
                 <mat-option
                     *ngFor="let title of filteredMembers | async"
                     [value]="title"

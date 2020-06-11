@@ -49,7 +49,7 @@ export class MembersComponent implements OnDestroy {
     });
   }
 
-  searchMovie(): void {
+  searchMember(): void {
     if (!this.titleControl.value || this.titleControl.value.length === 0) {
       this.searchedMembers = this.members;
       this.titleControl.setValue("");
