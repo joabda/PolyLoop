@@ -20,6 +20,10 @@ export class NavBarComponent implements OnInit {
     },
     {
       name   : '',
+      href   : '/hyperloop'
+    },
+    {
+      name   : '',
       href   : '/team'
     },
     {

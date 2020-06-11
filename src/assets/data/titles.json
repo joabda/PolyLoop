@@ -4,15 +4,19 @@
         "fr": "Acceuil"
     },
     {
+        "en": "Hyperloop",
+        "fr": "Hyperloop"
+    },
+    {
         "en": "Team",
         "fr": "Équipe"
     },
     {
         "en": "Sponsors",
-        "fr": "Commandiraires"
+        "fr": "Partenaires"
     },
     {
-        "en": "Join Us",
-        "fr": "Nous Rejoindre"
+        "en": "Contact Us",
+        "fr": "Nous Joindre"
     }
 ]
