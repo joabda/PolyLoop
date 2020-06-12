@@ -21,6 +21,8 @@ import { MembersComponent } from './components/members/members.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { SponsorsComponent } from './components/sponsors/sponsors.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MembersComponent,
     NavBarComponent,
     SponsorsComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatListModule,
     MatSidenavModule,
     MatToolbarModule,
+    MDBBootstrapModule.forRoot(),
     ReactiveFormsModule,
   ],
   providers: [

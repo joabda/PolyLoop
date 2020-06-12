@@ -9,7 +9,6 @@
 
   .mat-drawer-container {
     background-color: transparent;
-    color: rgba(0,0,0,.87);
   }
   
   .sidenav {
@@ -35,30 +34,27 @@
   .fill-remaining-space {
     flex: 1 1 auto;
   }
-
-  .btn-outline-dark {
-    color: white;
-    font-size: x-large;
-  }
   
-  .link{
-    padding-right: 20px;
+  .nav-but{
+    color: white;
+    display: table-cell;
+    font-size: large;
+    padding-top: 10px;
     padding-left: 20px;
-    margin-left: 10px;
-    margin-bottom: 40px;
-    border: 0px;
-    border-radius: 20px;
-    transition: 1s;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+
+  .nav-but:hover {
+    color: #af2dff
   }
   
   #lang-img {
+    margin-left: 30px;
     width: 50px;
   }
 
   #logo{
-    height: 100%;
-    transform: translate(0%, -30%);
-    vertical-align: middle;
     width: 190px; 
   }
 

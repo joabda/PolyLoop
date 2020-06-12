@@ -2,15 +2,17 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { IntroComponent } from './components/intro/intro.component';
 import { MembersComponent } from './components/members/members.component';
-import { AppComponent } from './app.component';
 import { SponsorsComponent } from './components/sponsors/sponsors.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 
 const routes: Routes = [
+  { path: "contact", component: ContactUsComponent },
   { path: "sponsors", component: SponsorsComponent    },
   { path: "team", component: MembersComponent    },
   { path: "", component: IntroComponent    },
   { path: "*"     , component: IntroComponent      }, // Home Page
+  { path: "**"     , component: IntroComponent      }, // Home Page
 ];
 
 @NgModule({
