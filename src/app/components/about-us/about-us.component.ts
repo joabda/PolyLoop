@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DataService } from 'src/app/services/data/data.service';
+import { AboutJSON } from 'src/app/interfaces/json/aboutJSON';
 
 @Component({
   selector: 'app-about-us',
@@ -8,13 +9,11 @@ import { DataService } from 'src/app/services/data/data.service';
 })
 export class AboutUsComponent {
 
-  text: string[]
-  text2: string[]
+  text: AboutJSON;
+
   constructor(private data: DataService) { 
     this.data.language.subscribe( () => {
-      const text = data.getMission();
-      this.text = text.slice(0, 3);
-      this.text2 = text.slice(3);
+      this.text = data.getAbout();
     });
   }
 

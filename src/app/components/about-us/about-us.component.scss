@@ -1,22 +1,17 @@
-
-#container {
-    display: table;
-    padding: 30px
+.wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.mission-text {
-    color:grey;
-    font-size: 25px;
+#tube {
+    width: 60%;
 }
 
-.cell {
-    display: table-cell;
-    padding: 30px;
-    vertical-align: middle; 
+.align-self-end {
+    margin-right: 10vw !important;
 }
 
-img {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: 100%;
+#card {
+    background-image: url('../../../assets/img/tube.png'); 
+    min-height: 70vh;
 }

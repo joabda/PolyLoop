@@ -1,25 +1,26 @@
 <div class="wrapper">
-    <div class="title">
-        <h1>Mission</h1>
-    </div>
-
-    <div id="container">
-        <div style="display: table-row;">
-            <div class="cell">
-                <p class="mission-text" *ngFor="let el of text">{{el}}</p>
+    <div class="d-flex">
+        <!-- Card -->
+        <mdb-card id="card"
+            class="card-image mb-3 mx-2">
+            <!-- Content -->
+            <div class="text-white text-center col-lg-3 my-4 d-flex align-items-center rgba-black-strong py-5 px-4 align-self-end">
+                <div>
+                    <h5 class="blue-text">
+                        <mdb-icon fas icon="chart-pie"></mdb-icon>
+                        {{text.title}}
+                    </h5>
+                    <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
+                    <p *ngFor="let line of text.text">{{line}}</p>
+                    <a mdbBtn color="blue" class="waves-light" mdbWavesEffect>
+                        <mdb-icon far icon="clone" class="left"></mdb-icon>
+                        {{text.button}}
+                    </a>
+                </div>
             </div>
-            <div class="cell">
-                <img src="../../../assets/img/hyperloop.jpeg" alt="Elon Musk at SpaceX">
-            </div>
-
-        </div>
-        <div style="display: table-row;">
-            <div class="cell">
-                <img src="../../../assets/img/hyperloop2.png" alt="Hyperloop concept image">
-            </div>
-            <div class="cell">
-                <p class="mission-text" *ngFor="let el of text2">{{el}}</p>
-            </div>
-        </div>
+            <!-- Content -->
+        </mdb-card>
+        <!-- Card -->
+        <!-- <img src="../../../assets/img/tube.png" alt="Hyperloop Tube Rendered" id="tube"> -->
     </div>
 </div>
