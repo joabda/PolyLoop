@@ -3,7 +3,7 @@
   <section class="pb-5">
 
     <!--Section heading-->
-    <h2 class="title">Contact us</h2>
+    <h2 class="title">{{text.title}}</h2>
     <!--Section description-->
     <!-- <p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure
       provident
@@ -19,32 +19,32 @@
             <!--Header-->
             <div class="form-header accent-1">
               <h3>
-                <mdb-icon fas icon="envelope"></mdb-icon> Write to us:
+                <mdb-icon fas icon="envelope"></mdb-icon> {{text.caption}}
               </h3>
             </div>
             <!--Body-->
             <div class="md-form">
               <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
               <input mdbInput type="text" id="form3" class="form-control" [(ngModel)]="currentValues.name">
-              <label for="form3">Your name</label>
+              <label for="form3">{{text.name}}</label>
             </div>
             <div class="md-form">
               <mdb-icon fas icon="envelope" class="prefix grey-text"></mdb-icon>
               <input mdbInput type="text" id="form2" class="form-control" [(ngModel)]="currentValues.email">
-              <label for="form2">Your email</label>
+              <label for="form2">{{text.email}}</label>
             </div>
             <div class="md-form">
               <mdb-icon fas icon="tag" class="prefix grey-text"></mdb-icon>
               <input mdbInput type="text" id="form32" class="form-control" [(ngModel)]="currentValues.reason">
-              <label for="form34">Subject</label>
+              <label for="form34">{{text.subject}}</label>
             </div>
             <div class="md-form">
               <mdb-icon fas icon="pencil-alt" class="prefix grey-text"></mdb-icon>
               <textarea mdbInput type="text" id="form8" class="md-textarea" [(ngModel)]="currentValues.message"></textarea>
-              <label for="form8">Message</label>
+              <label for="form8">{{text.message}}</label>
             </div>
             <div class="text-center">
-              <button mdbBtn color="light-blue" class="waves-light" mdbWavesEffect (click)="submit()">Submit</button>
+              <button mdbBtn color="light-blue" class="waves-light" mdbWavesEffect (click)="submit()">{{text.send}}</button>
             </div>
           </mdb-card-body>
         </mdb-card>

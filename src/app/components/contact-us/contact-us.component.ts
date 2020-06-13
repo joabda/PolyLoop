@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import * as _info from 'src/assets/data/infos.json'
 import { HttpClient } from '@angular/common/http';
+import { DataService } from 'src/app/services/data/data.service';
+import { ContactUsJSON } from 'src/app/interfaces/json/ContactUsJSON';
 
 @Component({
   selector: 'app-contact-us',
@@ -17,8 +19,13 @@ export class ContactUsComponent {
     reason: string,
     message: string
   };
+  text: ContactUsJSON;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private data: DataService) {
+    data.language.subscribe(() => {
+      this.text = data.getContactUs();
+    });
+
     this.currentValues = {
       name: "",
       email: "",
