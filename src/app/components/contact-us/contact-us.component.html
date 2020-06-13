@@ -25,26 +25,26 @@
             <!--Body-->
             <div class="md-form">
               <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
-              <input mdbInput type="text" id="form3" class="form-control">
+              <input mdbInput type="text" id="form3" class="form-control" [(ngModel)]="currentValues.name">
               <label for="form3">Your name</label>
             </div>
             <div class="md-form">
               <mdb-icon fas icon="envelope" class="prefix grey-text"></mdb-icon>
-              <input mdbInput type="text" id="form2" class="form-control">
+              <input mdbInput type="text" id="form2" class="form-control" [(ngModel)]="currentValues.email">
               <label for="form2">Your email</label>
             </div>
             <div class="md-form">
               <mdb-icon fas icon="tag" class="prefix grey-text"></mdb-icon>
-              <input mdbInput type="text" id="form32" class="form-control">
+              <input mdbInput type="text" id="form32" class="form-control" [(ngModel)]="currentValues.reason">
               <label for="form34">Subject</label>
             </div>
             <div class="md-form">
               <mdb-icon fas icon="pencil-alt" class="prefix grey-text"></mdb-icon>
-              <textarea mdbInput type="text" id="form8" class="md-textarea"></textarea>
+              <textarea mdbInput type="text" id="form8" class="md-textarea" [(ngModel)]="currentValues.message"></textarea>
               <label for="form8">Message</label>
             </div>
             <div class="text-center">
-              <button mdbBtn color="light-blue" class="waves-light" mdbWavesEffect>Submit</button>
+              <button mdbBtn color="light-blue" class="waves-light" mdbWavesEffect (click)="submit()">Submit</button>
             </div>
           </mdb-card-body>
         </mdb-card>
@@ -75,5 +75,6 @@
       <!--Grid column-->
     </div>
   </section>
+
   <!--Section: Contact v.1-->
 </div>

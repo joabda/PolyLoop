@@ -23,6 +23,7 @@ import { SponsorsComponent } from './components/sponsors/sponsors.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     MatAutocompleteModule,
     MatCardModule,
     MatDialogModule,
