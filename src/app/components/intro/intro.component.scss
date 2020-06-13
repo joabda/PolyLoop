@@ -19,3 +19,15 @@
     background: #040406;
     position: relative;
 }
+
+.carousel-text {
+    top: 30%; 
+    left: 25%;
+    position: absolute;
+    overflow: hidden;
+
+    img {
+        height: auto;
+        width: 50vw;
+    }
+}
