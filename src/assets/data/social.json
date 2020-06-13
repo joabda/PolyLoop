@@ -10,6 +10,11 @@
     "title": "Facebook Messenger"
   },
   {
+    "link": "https://www.instagram.com/polyloopmtl/",
+    "iconSrc": "../../../assets/img/social/instagram.png",
+    "title": "Instagram"
+  },
+  {
     "link": "https://www.youtube.com/channel/UC1FRrcYS8QgwvWIGhyMs7DQ/featured?disable_polymer=1",
     "iconSrc": "../../../assets/img/social/youtube.png",
     "title": "Youtube"

@@ -41,3 +41,28 @@ ul {
 span {
     color: whitesmoke;
 }
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row {
+    text-align: center;
+    width: 100vw;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 773px) {
+    .column {
+        display: table;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 100%;
+    }
+}
