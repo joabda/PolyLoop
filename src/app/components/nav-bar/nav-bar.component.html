@@ -2,7 +2,7 @@
     <mat-sidenav #drawer class="sidenav" (focusout)="drawer.close()"
         [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" mode="over" [fixedInViewport]="true" fullscreen>
         <mat-nav-list>
-            <a *ngFor="let link of links" type="button" class="btn btn-outline-dark link" href="{{link.href}}">{{link.name}}</a>
+            <a *ngFor="let link of links" type="button" class="nav-but-mobile" href="{{link.href}}">{{link.name}}</a>
         </mat-nav-list>
     </mat-sidenav>
 
@@ -12,6 +12,7 @@
                 *ngIf="!isBigScreen">
                 <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
             </button>
+            <span *ngIf="!isBigScreen" class="fill-remaining-space"></span>
             <a href="/home">
                 <img src="../../../assets/img/logo.png" alt="Polyloop Logo" id="logo">
             </a>

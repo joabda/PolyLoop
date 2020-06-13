@@ -45,8 +45,19 @@
     vertical-align: middle;
   }
 
-  .nav-but:hover {
+  .nav-but:hover{
     color: #af2dff
+  }
+
+  .nav-but-mobile {
+    color: black;
+    display: table-cell;
+    font-size: medium;
+    padding-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 100%;
   }
   
   #lang-img {
