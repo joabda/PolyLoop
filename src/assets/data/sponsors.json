@@ -1,27 +1,43 @@
 [
     {
-        "name": "Polymtl",
-        "pictureURL": "poly.png",
-        "url": "https://polymtl.ca"
-    },
+        "class": "Gold",
+        "elements": [
+            {
+                "name": "Polymtl",
+                "pictureURL": "polymtl.png",
+                "url": "https://polymtl.ca",
+                "description": "Description Polymtl"
+            },
+            {
+                "name": "AEP",
+                "pictureURL": "aep.png",
+                "url": "https://aep.polymtl.ca",
+                "description": "Description AEP"
+            }
+        ]
+    }, 
     {
-        "name": "AEP",
-        "pictureURL": "aep.png",
-        "url": "https://aep.polymtl.ca"
-    },
-    {
-        "name": "spacex",
-        "pictureURL": "spacex.jpg",
-        "url": "spacex.com"
-    },
-    {
-        "name": "stm",
-        "pictureURL": "stm.png",
-        "url": "stm.ca"
-    },
-    {
-        "name": "virgin",
-        "pictureURL": "virgin.png",
-        "url": ""
+        
+        "class": "Silver",
+        "elements": [
+            {
+                "name": "spacex",
+                "pictureURL": "spacex.jpg",
+                "url": "spacex.com",
+                "description": "Description SpaceX"
+            },
+            {
+                "name": "stm",
+                "pictureURL": "stm.png",
+                "url": "stm.ca",
+                "description": "Description STM"
+            },
+            {
+                "name": "virgin",
+                "pictureURL": "virgin.png",
+                "url": "",
+                "description": "Description Virgin"
+            }
+        ]
     }
 ]

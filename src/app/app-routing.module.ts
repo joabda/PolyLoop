@@ -8,7 +8,7 @@ import { HyperloopComponent } from './components/hyperloop/hyperloop.component';
 
 
 const routes: Routes = [
-  { path: "hyperloop", component: HyperloopComponent },
+  { path: "hyperloop", component: HyperloopComponent     },
   { path: "contact", component: ContactUsComponent },
   { path: "sponsors", component: SponsorsComponent    },
   { path: "team", component: MembersComponent    },

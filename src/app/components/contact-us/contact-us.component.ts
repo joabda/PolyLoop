@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import * as _info from 'src/assets/data/infos.json'
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { DataService } from 'src/app/services/data/data.service';
 import { ContactUsJSON } from 'src/app/interfaces/json/ContactUsJSON';
 
@@ -37,13 +37,13 @@ export class ContactUsComponent {
 
   submit(): void {
     try {
-      console.log('in funct');
       if (this.valid()) {
-        console.log(`https://docs.google.com/forms/d/e/1FAIpQLSePkTgeZOEqt_K6uYSCocK9_n00Wm-e1L1-nhUUs30f9clxMA/formResponse?` +
-        this.getURLData());
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        headers.append('Access-Control-Allow-Origin', '*');
         this.http.post(`https://docs.google.com/forms/d/e/1FAIpQLSePkTgeZOEqt_K6uYSCocK9_n00Wm-e1L1-nhUUs30f9clxMA/formResponse?` +
           this.getURLData(),
-          {}
+          {headers: headers}
         ).subscribe(res => console.log(res))
         // .subscribe(res => this.openSnack(this.text.thanks));
       }

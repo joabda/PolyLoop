@@ -1,22 +1,103 @@
-<div class="wrapper">
+<div class="wrapper container">
     <div>
-        <h1 class="title">{{data.currentSections[2]}}</h1>
+        <h1 class="title">{{data.currentSections[3]}}</h1>
     </div>
-    <div id="container">
-        <div style="display: table-row;" *ngFor="let pair of primarySponsors">
-            <div class="cell" *ngFor="let el of pair">
-                <a href="{{el.url}}">
-                    <img class="first" src="../../../assets/img/sponsors/{{el.pictureURL}}" alt="{{el.name}}">
-                </a>
+    <!-- Gold Sponsors -->
+    <h3 class="category">{{sponsors[0].class}}</h3>
+    <div *ngFor="let element of sponsors[0].elements; let j = index" class="card-container">
+        <div class="row" *ngIf="j % 2 == 0">
+            <div *ngIf="j < sponsors[0].elements.length" class="col-md-4" style="margin-right: 10vw;">
+                <div class="flip-card sponsor-1">
+                    <a href="{{sponsors[0].elements[j].url}}">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../../../assets/img/sponsors/{{sponsors[0].elements[j].pictureURL}}"
+                                    alt="{{sponsors[0].elements[j].name}}" class="sponsor-1">
+                            </div>
+                            <div class="flip-card-back">
+                                <div>
+                                    {{sponsors[0].elements[j].description}}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div *ngIf="j + 1 < sponsors[0].elements.length" class="col-md-4" style="margin-right: 10vw;">
+                <div class="flip-card sponsor-1">
+                    <a  href="{{sponsors[0].elements[j+1].url}}">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../../../assets/img/sponsors/{{sponsors[0].elements[j+1].pictureURL}}"
+                                    alt="{{sponsors[0].elements[j+1].name}}" class="sponsor-1">
+                            </div>
+                            <div class="flip-card-back">
+                                <div>
+                                    {{sponsors[0].elements[j+1].description}}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-        <!-- <div style="display: table-row;">
-            <div class="cell">
-                <img src="../../../assets/img/hyperloop2.png" alt="Hyperloop concept image">
+    </div>
+
+    <!-- Silver Sponsors -->
+    <h3 class="category">{{sponsors[1].class}}</h3>
+    <div *ngFor="let element of sponsors[1].elements; let j = index">
+        <div class="row" *ngIf="j % 3 == 0">
+            <div *ngIf="j < sponsors[1].elements.length" class="col-md-4">
+                <div class="flip-card sponsor-2">
+                    <a href="{{sponsors[1].elements[j].url}}">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../../../assets/img/sponsors/{{sponsors[1].elements[j].pictureURL}}"
+                                    alt="{{sponsors[1].elements[j].name}}" class="sponsor-2">
+                            </div>
+                            <div class="flip-card-back">
+                                <div>
+                                    {{sponsors[1].elements[j].description}}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="cell">
-                <p class="mission-text" *ngFor="let el of text2">{{el}}</p>
+            <div *ngIf="j + 1 < sponsors[1].elements.length" class="col-md-4">
+                <div class="flip-card sponsor-2">
+                    <a  href="{{sponsors[1].elements[j+1].url}}">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../../../assets/img/sponsors/{{sponsors[1].elements[j+1].pictureURL}}"
+                                    alt="{{sponsors[1].elements[j+1].name}}" class="sponsor-2">
+                            </div>
+                            <div class="flip-card-back">
+                                <div>
+                                    {{sponsors[1].elements[j+1].description}}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </div> -->
+            <div *ngIf="j + 2 < sponsors[1].elements.length" class="col-md-4">
+                <div class="flip-card sponsor-2">
+                    <a href="{{sponsors[1].elements[j+2].url}}">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../../../assets/img/sponsors/{{sponsors[1].elements[j+2].pictureURL}}"
+                                    alt="{{sponsors[1].elements[j+2].name}}" class="sponsor-2">
+                            </div>
+                            <div class="flip-card-back">
+                                <div>
+                                    {{sponsors[1].elements[j+2].description}}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
