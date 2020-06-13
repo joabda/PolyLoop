@@ -1,4 +1,4 @@
-<div class="wrapper container">
+<div class="wrapper">
     <div>
         <h1 class="title">{{data.currentSections[3]}}</h1>
     </div>
@@ -6,13 +6,13 @@
     <h3 class="category">{{sponsors[0].class}}</h3>
     <div *ngFor="let element of sponsors[0].elements; let j = index" class="card-container">
         <div class="row" *ngIf="j % 2 == 0">
-            <div *ngIf="j < sponsors[0].elements.length" class="col-md-4" style="margin-right: 10vw;">
+            <div *ngIf="j < sponsors[0].elements.length" class="col-md-4" style="margin-right: 5vw;">
                 <div class="flip-card sponsor-1">
                     <a href="{{sponsors[0].elements[j].url}}">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <img src="../../../assets/img/sponsors/{{sponsors[0].elements[j].pictureURL}}"
-                                    alt="{{sponsors[0].elements[j].name}}" class="sponsor-1">
+                                    alt="{{sponsors[0].elements[j].name}}">
                             </div>
                             <div class="flip-card-back">
                                 <div>
@@ -23,13 +23,13 @@
                     </a>
                 </div>
             </div>
-            <div *ngIf="j + 1 < sponsors[0].elements.length" class="col-md-4" style="margin-right: 10vw;">
+            <div *ngIf="j + 1 < sponsors[0].elements.length" class="col-md-4" style="margin-right: 5vw;">
                 <div class="flip-card sponsor-1">
                     <a  href="{{sponsors[0].elements[j+1].url}}">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <img src="../../../assets/img/sponsors/{{sponsors[0].elements[j+1].pictureURL}}"
-                                    alt="{{sponsors[0].elements[j+1].name}}" class="sponsor-1">
+                                    alt="{{sponsors[0].elements[j+1].name}}">
                             </div>
                             <div class="flip-card-back">
                                 <div>
@@ -47,13 +47,13 @@
     <h3 class="category">{{sponsors[1].class}}</h3>
     <div *ngFor="let element of sponsors[1].elements; let j = index">
         <div class="row" *ngIf="j % 3 == 0">
-            <div *ngIf="j < sponsors[1].elements.length" class="col-md-4">
+            <div *ngIf="j < sponsors[1].elements.length" class="col-md-4"  style="margin-right: 3vw;">
                 <div class="flip-card sponsor-2">
                     <a href="{{sponsors[1].elements[j].url}}">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <img src="../../../assets/img/sponsors/{{sponsors[1].elements[j].pictureURL}}"
-                                    alt="{{sponsors[1].elements[j].name}}" class="sponsor-2">
+                                    alt="{{sponsors[1].elements[j].name}}">
                             </div>
                             <div class="flip-card-back">
                                 <div>
@@ -64,13 +64,13 @@
                     </a>
                 </div>
             </div>
-            <div *ngIf="j + 1 < sponsors[1].elements.length" class="col-md-4">
+            <div *ngIf="j + 1 < sponsors[1].elements.length" class="col-md-4" style="margin-right: 3vw;">
                 <div class="flip-card sponsor-2">
                     <a  href="{{sponsors[1].elements[j+1].url}}">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <img src="../../../assets/img/sponsors/{{sponsors[1].elements[j+1].pictureURL}}"
-                                    alt="{{sponsors[1].elements[j+1].name}}" class="sponsor-2">
+                                    alt="{{sponsors[1].elements[j+1].name}}">
                             </div>
                             <div class="flip-card-back">
                                 <div>
@@ -81,13 +81,13 @@
                     </a>
                 </div>
             </div>
-            <div *ngIf="j + 2 < sponsors[1].elements.length" class="col-md-4">
+            <div *ngIf="j + 2 < sponsors[1].elements.length" class="col-md-4" style="margin-right: 3vw;">
                 <div class="flip-card sponsor-2">
                     <a href="{{sponsors[1].elements[j+2].url}}">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
                                 <img src="../../../assets/img/sponsors/{{sponsors[1].elements[j+2].pictureURL}}"
-                                    alt="{{sponsors[1].elements[j+2].name}}" class="sponsor-2">
+                                    alt="{{sponsors[1].elements[j+2].name}}">
                             </div>
                             <div class="flip-card-back">
                                 <div>

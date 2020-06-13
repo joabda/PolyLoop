@@ -47,24 +47,26 @@
 }
 
 .sponsor-1 {
-    max-height: 30vh;
-    max-width: 33vw;
+    height: 40vh;
+    width: 30vw;
 }
 
 .sponsor-2 {
-    max-height: 20vh;
-    max-width: 20vw;
+    height: 20vh;
+    width: 20vw;
 }
 
-.col-md-4{
-    display: inline-block;
-    padding: 0 !important;
+img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .wrapper {
     margin-bottom: 30px;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .card-container {
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
 }
