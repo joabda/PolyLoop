@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,19 +7,4 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AppComponent {
   title = 'POLYLOOP';
-
-  @HostListener('window:scroll', ['$event'])
-  scrollHandler(event) {
-    const missionSection = document.getElementById('mission');
-    if (missionSection !== null) {
-      const about = missionSection.getBoundingClientRect();
-      const mainNav = document.getElementById('main-nav');
-      if (about.top < 200) {
-        mainNav.style.backgroundColor = '#323232';
-        mainNav.style.opacity = '0.75';
-      } else {
-        mainNav.style.backgroundColor = 'transparent';
-      }
-    }
-  }
 }
