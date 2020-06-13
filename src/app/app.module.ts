@@ -24,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HyperloopComponent } from './components/hyperloop/hyperloop.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     NavBarComponent,
     SponsorsComponent,
     ContactUsComponent,
+    HyperloopComponent,
   ],
   imports: [
     BrowserModule,
