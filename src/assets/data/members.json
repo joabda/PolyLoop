@@ -1,27 +1,37 @@
 [
     {
-        "name": "Jason LEBEAU",
-        "pictureURL": "../../../assets/img/home.jpg",
-        "role": "President"
-    },
+        "subTeamName": "Executive",
+        "members": [
+            {
+                "name": "Jason LEBEAU",
+                "pictureURL": "../../../assets/img/home.jpg",
+                "role": "President"
+            },
+            {
+                "name": "Janette CHARNEAU",
+                "pictureURL": "../../../assets/img/home.jpg",
+                "role": "VP"
+            },
+            {
+                "name": "Kaleb BANG",
+                "pictureURL": "../../../assets/img/home.jpg",
+                "role": "VP-Sport"
+            }
+        ]
+    }, 
     {
-        "name": "Janette CHARNEAU",
-        "pictureURL": "../../../assets/img/home.jpg",
-        "role": "VP"
-    },
-    {
-        "name": "Kaleb BANG",
-        "pictureURL": "../../../assets/img/home.jpg",
-        "role": "VP-Sport"
-    },
-    {
-        "name": "Nicole PROUX",
-        "pictureURL": "../../../assets/img/home.jpg",
-        "role": "VP Finance"
-    },
-    {
-        "name": "Sebastien LOZON",
-        "pictureURL": "../../../assets/img/home.jpg",
-        "role": "VP Organisation"
+        "subTeamName": "Communication", 
+        "members": [
+            {
+                "name": "Nicole PROUX",
+                "pictureURL": "../../../assets/img/home.jpg",
+                "role": "VP Finance"
+            },
+            {
+                "name": "Sebastien LOZON",
+                "pictureURL": "../../../assets/img/home.jpg",
+                "role": "VP Organisation"
+            }
+        ]
     }
 ]

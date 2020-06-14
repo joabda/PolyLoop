@@ -7,6 +7,7 @@ import { MatInput } from '@angular/material/input';
 import { Observable, Subscription } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { HotkeysService } from 'src/app/services/hotkeys/hotkeys.service';
+import { TeamJSON } from 'src/app/interfaces/json/teamJSON';
 
 @Component({
   selector: 'app-members',
@@ -16,7 +17,7 @@ import { HotkeysService } from 'src/app/services/hotkeys/hotkeys.service';
 export class MembersComponent implements OnDestroy {
 
   private subscriptions: Subscription[] = [];
-  members: Member[] = (_members as any).default as Member[];
+  teams: TeamJSON[] = (_members as any).default as TeamJSON[];
   // titleControl: FormControl = new FormControl()
   // searchedMembers: Member[] = this.members;
   // allNames: string[];

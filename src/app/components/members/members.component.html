@@ -9,82 +9,85 @@
             amet numquam iure provident voluptate esse quasi,
             veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
         <!-- Grid row -->
-        <div *ngFor="let member of members; let i = index" id="members-display">
-            <div *ngIf="i % 4 == 0" class="row">
-                <!-- Grid column -->
-                <div *ngIf="i < members.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
-                    <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
-                            class="rounded-circle z-depth-1" alt="Sample avatar">
+        <div *ngFor="let team of teams">
+            <h2 class="subteam">{{team.subTeamName}}</h2>
+            <div *ngFor="let member of team.members; let i = index" id="members-display">
+                <div *ngIf="i % 4 == 0" class="row">
+                    <!-- Grid column -->
+                    <div *ngIf="i < team.members.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                        <div class="avatar mx-auto">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+                                class="rounded-circle z-depth-1" alt="Sample avatar">
+                        </div>
+                        <h5 class="font-weight-bold mt-4 mb-3">{{team.members[i].name}}</h5>
+                        <p class="text-uppercase blue-text">
+                            <strong>{{team.members[i].role}}</strong>
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <!-- Linkedin -->
+                            <a class="p-2 fa-lg fb-ic" href="{{team.members[i].linkedIn}}">
+                                <mdb-icon fab icon="linked" class="blue-text"> </mdb-icon>
+                            </a>
+                        </ul>
                     </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">{{members[i].name}}</h5>
-                    <p class="text-uppercase blue-text">
-                        <strong>{{members[i].role}}</strong>
-                    </p>
-                    <ul class="list-unstyled mb-0">
-                        <!-- Linkedin -->
-                        <a class="p-2 fa-lg fb-ic" href="{{members[i].linkedIn}}">
-                            <mdb-icon fab icon="linked" class="blue-text"> </mdb-icon>
-                        </a>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div *ngIf="i + 1 < members.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
-                    <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
-                            class="rounded-circle z-depth-1" alt="Sample avatar">
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div *ngIf="i + 1 < team.members.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                        <div class="avatar mx-auto">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+                                class="rounded-circle z-depth-1" alt="Sample avatar">
+                        </div>
+                        <h5 class="font-weight-bold mt-4 mb-3">{{team.members[i+ 1].name}}</h5>
+                        <p class="text-uppercase blue-text">
+                            <strong>{{team.members[i+ 1].role}}</strong>
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <!-- Linkedin -->
+                            <a class="p-2 fa-lg fb-ic" href="{{team.members[i+ 1].linkedIn}}">
+                                <mdb-icon fab icon="linked" class="blue-text"> </mdb-icon>
+                            </a>
+                        </ul>
                     </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">{{members[i+ 1].name}}</h5>
-                    <p class="text-uppercase blue-text">
-                        <strong>{{members[i+ 1].role}}</strong>
-                    </p>
-                    <ul class="list-unstyled mb-0">
-                        <!-- Linkedin -->
-                        <a class="p-2 fa-lg fb-ic" href="{{members[i+ 1].linkedIn}}">
-                            <mdb-icon fab icon="linked" class="blue-text"> </mdb-icon>
-                        </a>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div *ngIf="i + 2 < members.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
-                    <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
-                            class="rounded-circle z-depth-1" alt="Sample avatar">
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div *ngIf="i + 2 < team.members.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                        <div class="avatar mx-auto">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+                                class="rounded-circle z-depth-1" alt="Sample avatar">
+                        </div>
+                        <h5 class="font-weight-bold mt-4 mb-3">{{team.members[i+ 2].name}}</h5>
+                        <p class="text-uppercase blue-text">
+                            <strong>{{team.members[i + 2].role}}</strong>
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <!-- Linkedin -->
+                            <a class="p-2 fa-lg fb-ic" href="{{team.members[i + 2].linkedIn}}">
+                                <mdb-icon fab icon="linked" class="blue-text"> </mdb-icon>
+                            </a>
+                        </ul>
                     </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">{{members[i+ 2].name}}</h5>
-                    <p class="text-uppercase blue-text">
-                        <strong>{{members[i + 2].role}}</strong>
-                    </p>
-                    <ul class="list-unstyled mb-0">
-                        <!-- Linkedin -->
-                        <a class="p-2 fa-lg fb-ic" href="{{members[i + 2].linkedIn}}">
-                            <mdb-icon fab icon="linked" class="blue-text"> </mdb-icon>
-                        </a>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div *ngIf="i + 3 < members.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
-                    <div class="avatar mx-auto">
-                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
-                            class="rounded-circle z-depth-1" alt="Sample avatar">
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div *ngIf="i + 3 < team.members.length" class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                        <div class="avatar mx-auto">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+                                class="rounded-circle z-depth-1" alt="Sample avatar">
+                        </div>
+                        <h5 class="font-weight-bold mt-4 mb-3">{{team.members[i+ 3].name}}</h5>
+                        <p class="text-uppercase blue-text">
+                            <strong>{{team.members[i+ 3].role}}</strong>
+                        </p>
+                        <ul class="list-unstyled mb-0">
+                            <!-- Linkedin -->
+                            <a class="p-2 fa-lg fb-ic" href="{{team.members[i+ 3].linkedIn}}">
+                                <mdb-icon fab icon="linked" class="blue-text"> </mdb-icon>
+                            </a>
+                        </ul>
                     </div>
-                    <h5 class="font-weight-bold mt-4 mb-3">{{members[i+ 3].name}}</h5>
-                    <p class="text-uppercase blue-text">
-                        <strong>{{members[i+ 3].role}}</strong>
-                    </p>
-                    <ul class="list-unstyled mb-0">
-                        <!-- Linkedin -->
-                        <a class="p-2 fa-lg fb-ic" href="{{members[i+ 3].linkedIn}}">
-                            <mdb-icon fab icon="linked" class="blue-text"> </mdb-icon>
-                        </a>
-                    </ul>
+                    <!-- Grid column -->
                 </div>
-                <!-- Grid column -->
+                <!-- Grid row -->
             </div>
-            <!-- Grid row -->
         </div>
     </section>
 </div>

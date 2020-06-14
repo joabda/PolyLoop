@@ -7,7 +7,6 @@ import { ContactUsJSON } from 'src/app/interfaces/json/ContactUsJSON';
 import { AboutJSON } from 'src/app/interfaces/json/aboutJSON';
 import { SponsorJSON } from 'src/app/interfaces/json/sponsorJSON';
 import * as _titles from 'src/assets/data/titles.json';
-import * as _mission from 'src/assets/data/mission.json';
 import * as _sponsors from 'src/assets/data/sponsors.json';
 import * as _contactUs from 'src/assets/data/contact-us.json';
 import * as _about from 'src/assets/data/about.json';
@@ -18,24 +17,11 @@ export class DataService {
   language = new BehaviorSubject(Language.EN);
   currentSections: string[];
   static titles_ = (_titles as any).default as Title[];
-  static mission_ = (_mission as any).default as Title[];
   static contactUs_ = (_contactUs as any).default as ContactUsJSON[];
   static about_ = (_about as any).default as AboutJSON[];
   static sponsors_ = (_sponsors as any).default as SponsorJSON[]
 
   constructor() {
-  }
-  
-  getMission(): string[] {
-    if (this.language.value === Language.FR) {
-      return DataService.mission_.map(function (el) {
-        return el.fr;
-      });
-    } else {
-      return DataService.mission_.map(function (el) {
-        return el.en;
-      });
-    }
   }
 
   getTitles(): string[] {
