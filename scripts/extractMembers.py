@@ -3,41 +3,80 @@
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
+from tkinter import StringVar
 import pandas as pd
+import csv, json
+
+# Constants
+TEXT_COLOR = "white"
+BUTTON_COLOR = "green"
+BUTTON_WIDTH = 20
+BUTTON_HEIGHT = 1
+FONT = ('helvetica', 12, 'bold')
+#
+
 
 root= tk.Tk()
+root.title("CSV to JSON")
+root.resizable(False, False)
 
-canvas1 = tk.Canvas(root, width = 300, height = 300, bg = 'lightsteelblue2', relief = 'raised')
+canvas1 = tk.Canvas(root, width = 300, height = 300, bg = 'black', relief = 'raised')
 canvas1.pack()
+fileToConvert = tk.StringVar()
+fileToConvert.set("Nothing imported yet.")
+fileNameLabel = tk.Label(root, textvariable=fileToConvert, bg = 'black', fg=TEXT_COLOR)
+fileNameLabel.config(font=('Times', 12))
+canvas1.create_window(150, 60, window=fileNameLabel)
 
-label1 = tk.Label(root, text='File Conversion Tool', bg = 'lightsteelblue2')
-label1.config(font=('helvetica', 20))
-canvas1.create_window(150, 60, window=label1)
+data = {}
+def getCSV():
+    importedPath = filedialog.askopenfilename()
+    if importedPath.lower().endswith('.csv') == False :
+        MsgBox = tk.messagebox.askquestion('File extension is not .csv','Are you sure it\'s a csv file?', icon = 'warning')
+        if MsgBox == 'no':
+            return
+    try :
+        read_file = pd.read_csv (importedPath)
+        lastDirChange = importedPath.rfind('/')
+        fileToConvert.set(importedPath[lastDirChange+1:])
+    except:
+        tk.messagebox.showinfo("Error", "Selected file cannot be converted to JSON", icon = 'error')
 
-def getCSV ():
-    global read_file
-    
-    import_file_path = filedialog.askopenfilename()
-    read_file = pd.read_csv (import_file_path)
-    
-browseButton_CSV = tk.Button(text="      Import CSV File     ", command=getCSV, bg='green', fg='white', font=('helvetica', 12, 'bold'))
-canvas1.create_window(150, 130, window=browseButton_CSV)
 
-def convertToJSON ():
-    global read_file
-    
-    export_file_path = filedialog.asksaveasfilename(defaultextension='.json')
-    read_file.to_json (export_file_path)
+    with open(importedPath) as csvFile:
+        global data
+        csvReader = csv.DictReader(csvFile)
+        data = list()
+        for row in csvReader:
+            data.append(row)
+        data = [dict(zip(data[0],row)) for row in data]
 
-saveAsButton_JSON = tk.Button(text='Convert CSV to JSON', command=convertToJSON, bg='green', fg='white', font=('helvetica', 12, 'bold'))
-canvas1.create_window(150, 180, window=saveAsButton_JSON)
+importButton = tk.Button(text="Import CSV File", width=BUTTON_WIDTH, height=BUTTON_HEIGHT, 
+    command=getCSV, bg=BUTTON_COLOR, fg=TEXT_COLOR, font=FONT)
+canvas1.create_window(150, 130, window=importButton)
+
+def convertToJSON():
+    if fileNameLabel.cget("text") != "Nothing imported yet.":
+        exportPath = filedialog.asksaveasfilename(defaultextension='.json')
+        with open(exportPath, 'w') as jsonFile:
+            global data
+            # data.pop(0)
+            json.dump(data, jsonFile)
+    else: 
+        tk.messagebox.showinfo("Error", "Please import a CSV File before attempting to convert", icon = 'error')
+
+
+convertButton = tk.Button(text='Convert CSV to JSON', width=BUTTON_WIDTH, height=BUTTON_HEIGHT, 
+    command=convertToJSON, bg=BUTTON_COLOR, fg=TEXT_COLOR, font=FONT)
+canvas1.create_window(150, 180, window=convertButton)
 
 def exitApplication():
-    MsgBox = tk.messagebox.askquestion ('Exit Application','Are you sure you want to exit the application',icon = 'warning')
+    MsgBox = tk.messagebox.askquestion('Exit','Confirm exit?', icon = 'warning')
     if MsgBox == 'yes':
        root.destroy()
      
-exitButton = tk.Button (root, text='       Exit Application     ',command=exitApplication, bg='brown', fg='white', font=('helvetica', 12, 'bold'))
+exitButton = tk.Button (root, text='Quit', width=BUTTON_WIDTH, height=BUTTON_HEIGHT, 
+    command=exitApplication, bg='brown', fg=TEXT_COLOR, font=FONT)
 canvas1.create_window(150, 230, window=exitButton)
 
 root.mainloop()
