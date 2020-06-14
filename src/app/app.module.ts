@@ -25,6 +25,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HyperloopComponent } from './components/hyperloop/hyperloop.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { HyperloopComponent } from './components/hyperloop/hyperloop.component';
     MatInputModule,
     MatListModule,
     MatSidenavModule,
+    MatSnackBarModule,
     MatToolbarModule,
     MDBBootstrapModule.forRoot(),
     ReactiveFormsModule,

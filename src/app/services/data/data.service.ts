@@ -49,4 +49,20 @@ export class DataService {
     return DataService.about_[this.language.value];
   }
 
+  getSent(): string {
+    if(this.language.value === Language.EN) {
+      return "Your message has been sent!";
+    } else {
+      return "Votre message a été envoyé!";
+    }
+  }
+
+  errorMessage(): string {
+    if(this.language.value === Language.EN) {
+      return "Sorry, we encountered some problems, try again later :(";
+    } else {
+      return "Désolé, nous avons rencontré des problèmes, réessayez plus tard :(";
+    }
+  }
+
 }
