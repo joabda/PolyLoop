@@ -14,7 +14,6 @@ export class HyperloopComponent {
   constructor(private data: DataService) {
     data.language.subscribe( () => {
       this.text = data.getHistory();
-      console.log(this.text)
     });
   }
 
