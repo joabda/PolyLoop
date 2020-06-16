@@ -43,7 +43,7 @@ export class NavBarComponent implements OnInit {
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver, public dialog: MatDialog, private data: DataService) { 
+  constructor(private breakpointObserver: BreakpointObserver, public dialog: MatDialog, public data: DataService) { 
     this.data.language.subscribe( () => {
       this.updateText();
     });

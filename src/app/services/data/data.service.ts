@@ -14,7 +14,7 @@ import * as _about from 'src/assets/data/about.json';
 @Injectable()
 export class DataService {
 
-  language = new BehaviorSubject(Language.EN);
+  language = new BehaviorSubject(Language.FR);
   currentSections: string[];
   static titles_ = (_titles as any).default as Title[];
   static contactUs_ = (_contactUs as any).default as ContactUsJSON[];
