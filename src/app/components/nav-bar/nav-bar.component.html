@@ -8,9 +8,9 @@
 
     <mat-sidenav-content id="content">
         <mat-toolbar id="bar" color="primary">
-            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
-                *ngIf="!isBigScreen">
-                <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                aria-label="Toggle navigation" (click)="drawer.toggle()"><span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span>
             </button>
             <span *ngIf="!isBigScreen" class="fill-remaining-space"></span>
             <span class="fill-remaining-space"></span>
@@ -21,12 +21,11 @@
                 <li *ngFor="let link of links">
                     <a type="button" class="nav-but" routerLink="{{link.href}}">{{link.name}}</a>
                 </li>
-
             </nav>
             <span class="fill-remaining-space"></span>
             <li>
-                <a (click)="this.switchLanguage()"> 
-                    <img id="lang-img" src="../../../assets/img/language/0.png" alt="Language"/>
+                <a (click)="this.switchLanguage()">
+                    <img id="lang-img" src="../../../assets/img/language/0.png" alt="Language" />
                 </a>
             </li>
         </mat-toolbar>
