@@ -1,119 +1,36 @@
 <div class="wrapper">
-
-
+    <!-- Timeline -->
     <section class="timeline">
         <div class="container">
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-
-                <div class="timeline-content js--fadeInLeft">
-                    <h2>Title</h2>
-                    <div class="date">1 MAY 2016</div>
-                    <p>BLA BLA BLA </p>
-                    <a class="bnt-more" href="javascript:void(0)">More</a>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-img"></div>
-
-                <div class="timeline-content timeline-card js--fadeInRight">
-                    <div class="timeline-img-header">
-                        <h2>Card Title</h2>
+            <div *ngFor="let event of text.events; let i = index">
+                <div *ngIf="i % 2 == 0">
+                    <!-- Left Items -->
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <div *ngIf="i < text.events.length" class="timeline-content js--fadeInLeft">
+                            <h2>{{text.events[i].title}}</h2>
+                            <div class="date">{{text.events[i].date}}</div>
+                            <p>{{text.events[i].text}}</p>
+                            <a class="bnt-more" href="javascript:void(0)">More</a>
+                        </div>
                     </div>
-                    <div class="date">25 MAY 2016</div>
-                    <p>BLA BLA BLA </p>
-                    <a class="bnt-more" href="javascript:void(0)">More</a>
-                </div>
-
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-img"></div>
-
-                <div class="timeline-content js--fadeInLeft">
-                    <div class="date">3 JUN 2016</div>
-                    <h2>Quote</h2>
-                    <blockquote>A Quote!</blockquote>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-img"></div>
-
-                <div class="timeline-content js--fadeInRight">
-                    <h2>Title</h2>
-                    <div class="date">22 JUN 2016</div>
-                    <p>BLA BLA BLA </p>
-                    <a class="bnt-more" href="javascript:void(0)">More</a>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-img"></div>
-
-                <div class="timeline-content timeline-card js--fadeInLeft">
-                    <div class="timeline-img-header">
-                        <h2>Card Title</h2>
+                    <!-- Left Items -->
+                    <div class="timeline-item">
+                        <div class="timeline-img"></div>
+                        <!-- Right Items -->
+                        <div *ngIf="i + 1 < text.events.length" class="timeline-content timeline-card js--fadeInRight">
+                            <div class="timeline-img-header">
+                                <h2>{{text.events[i+1].title}}</h2>
+                            </div>
+                            <div class="date">{{text.events[i+1].date}}</div>
+                            <p>{{text.events[i+1].text}}</p>
+                            <a class="bnt-more" href="javascript:void(0)">More</a>
+                        </div>
+                        <!-- Right Items -->
                     </div>
-                    <div class="date">10 JULY 2016</div>
-                    <p>BLA BLA BLA </p>
-                    <a class="bnt-more" href="javascript:void(0)">More</a>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-img"></div>
-
-                <div class="timeline-content timeline-card js--fadeInRight">
-                    <div class="timeline-img-header">
-                        <h2>Card Title</h2>
-                    </div>
-                    <div class="date">30 JULY 2016</div>
-                    <p>BLA BLA BLA </p>
-                    <a class="bnt-more" href="javascript:void(0)">More</a>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-img"></div>
-
-                <div class="timeline-content js--fadeInLeft">
-                    <div class="date">5 AUG 2016</div>
-                    <h2>Quote</h2>
-                    <blockquote>A Quote!</blockquote>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-
-                <div class="timeline-img"></div>
-
-                <div class="timeline-content timeline-card js--fadeInRight">
-                    <div class="timeline-img-header">
-                        <h2>Card Title</h2>
-                    </div>
-                    <div class="date">19 AUG 2016</div>
-                    <p>BLA BLA BLA </p>
-                    <a class="bnt-more" href="javascript:void(0)">More</a>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-img"></div>
-                <div class="timeline-content js--fadeInLeft">
-                    <div class="date">1 SEP 2016</div>
-                    <h2>Title</h2>
-                    <p>BLA BLA BLA </p>
-                    <a class="bnt-more" href="javascript:void(0)">More</a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Timeline -->
 </div>

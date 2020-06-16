@@ -2,14 +2,15 @@ import { Injectable } from '@angular/core';
 import { Title } from 'src/app/interfaces/titles';
 import { Language } from 'src/app/enums/language';
 import { BehaviorSubject } from 'rxjs';
-import { Sponsor } from 'src/app/interfaces/sponsor';
 import { ContactUsJSON } from 'src/app/interfaces/json/ContactUsJSON';
 import { AboutJSON } from 'src/app/interfaces/json/aboutJSON';
 import { SponsorJSON } from 'src/app/interfaces/json/sponsorJSON';
+import { HistoryJSON } from 'src/app/interfaces/json/historyJSON';
 import * as _titles from 'src/assets/data/titles.json';
 import * as _sponsors from 'src/assets/data/sponsors.json';
 import * as _contactUs from 'src/assets/data/contact-us.json';
 import * as _about from 'src/assets/data/about.json';
+import * as _history from 'src/assets/data/history.json';
 
 @Injectable()
 export class DataService {
@@ -19,7 +20,8 @@ export class DataService {
   static titles_ = (_titles as any).default as Title[];
   static contactUs_ = (_contactUs as any).default as ContactUsJSON[];
   static about_ = (_about as any).default as AboutJSON[];
-  static sponsors_ = (_sponsors as any).default as SponsorJSON[]
+  static sponsors_ = (_sponsors as any).default as SponsorJSON[];
+  static history_ = (_history as any).default as HistoryJSON[];
 
   constructor() {
   }
@@ -35,6 +37,10 @@ export class DataService {
       });
     }
     return this.currentSections;
+  }
+
+  getHistory(): HistoryJSON {
+    return DataService.history_[this.language.value];
   }
 
   getSponsors(): SponsorJSON[] {
