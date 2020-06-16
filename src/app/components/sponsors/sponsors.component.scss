@@ -20,7 +20,7 @@
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
-    transition: 1.5s;
+    transition: 0.8s;
     transform: rotateY(180deg);
 }
 
