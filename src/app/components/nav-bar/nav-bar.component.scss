@@ -36,10 +36,10 @@
   }
   
   .nav-but{
-    color: white;
+    color: black;
     display: table-cell;
     font-size: large;
-    padding-top: 10px;
+    padding-top: 30px;
     padding-left: 20px;
     text-decoration: none;
     vertical-align: middle;
@@ -61,12 +61,14 @@
   }
   
   #lang-img {
+    padding-top: 20px;
     margin-left: 30px;
     width: 50px;
   }
 
   #logo{
-    width: 190px; 
+    padding-top: 25px;
+    width: 200px; 
   }
 
   #lang-img:hover{

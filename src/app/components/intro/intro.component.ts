@@ -19,8 +19,7 @@ export class IntroComponent {
 
   ngOnDestroy(): void {
     if (this.mainNav !== null) {
-      this.mainNav.style.backgroundColor = '#323232';
-      this.mainNav.style.opacity = '0.75';
+      this.mainNav.style.backgroundColor = '#FFFFFF';
     }
   }
 
@@ -29,8 +28,7 @@ export class IntroComponent {
     const missionSection = document.getElementById('mission');
     if (missionSection !== null) {
       if (missionSection.getBoundingClientRect().top < 200) {
-        this.mainNav.style.backgroundColor = '#323232';
-        this.mainNav.style.opacity = '0.75';
+        this.mainNav.style.backgroundColor = '#FFFFFF';
       } else {
         this.mainNav.style.backgroundColor = 'transparent';
       }

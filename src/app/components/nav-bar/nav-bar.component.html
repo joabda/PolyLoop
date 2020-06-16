@@ -13,20 +13,22 @@
                 <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
             </button>
             <span *ngIf="!isBigScreen" class="fill-remaining-space"></span>
+            <span class="fill-remaining-space"></span>
             <a href="/home">
                 <img src="../../../assets/img/logo.png" alt="Polyloop Logo" id="logo">
             </a>
-            <span class="fill-remaining-space"></span>
             <nav class="nav nav-pills flex-column flex-sm-row" *ngIf="isBigScreen">
                 <li *ngFor="let link of links">
                     <a type="button" class="nav-but" routerLink="{{link.href}}">{{link.name}}</a>
                 </li>
-                <li>
-                    <a (click)="this.switchLanguage()"> 
-                        <img id="lang-img" src="../../../assets/img/language/1.png" alt="Language"/>
-                    </a>
-                </li>
+
             </nav>
+            <span class="fill-remaining-space"></span>
+            <li>
+                <a (click)="this.switchLanguage()"> 
+                    <img id="lang-img" src="../../../assets/img/language/1.png" alt="Language"/>
+                </a>
+            </li>
         </mat-toolbar>
         <ng-content></ng-content>
     </mat-sidenav-content>
