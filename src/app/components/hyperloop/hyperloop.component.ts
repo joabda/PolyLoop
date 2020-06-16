@@ -16,5 +16,4 @@ export class HyperloopComponent {
       this.text = data.getHistory();
     });
   }
-
 }

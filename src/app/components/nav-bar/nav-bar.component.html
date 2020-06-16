@@ -6,14 +6,14 @@
         </mat-nav-list>
     </mat-sidenav>
 
-    <mat-sidenav-content id="content">
+    <mat-sidenav-content id="content" class="justify-content-center">
         <mat-toolbar id="bar" color="primary">
             <button *ngIf="!isBigScreen" id="toggle" class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
                 aria-label="Toggle navigation" (click)="drawer.toggle()"><span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span>
             </button>
             <span *ngIf="!isBigScreen" class="fill-remaining-space"></span>
-            <span class="fill-remaining-space"></span>
+            <span *ngIf="isBigScreen" class="fill-remaining-space"></span>
             <a href="/home">
                 <img src="../../../assets/img/logo.png" alt="Polyloop Logo" id="logo">
             </a>
@@ -22,7 +22,8 @@
                     <a type="button" class="nav-but" routerLink="{{link.href}}">{{link.name}}</a>
                 </li>
             </nav>
-            <span class="fill-remaining-space"></span>
+            <span *ngIf="!isBigScreen" class="fill-remaining-space"></span>
+            <span *ngIf="isBigScreen" class="fill-remaining-space"></span>
             <li>
                 <a (click)="this.switchLanguage()">
                     <img id="lang-img" src="../../../assets/img/language/0.png" alt="Language" />
