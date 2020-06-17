@@ -7,8 +7,10 @@
                     <!-- Left Items -->
                     <div class="timeline-item">
                         <div class="timeline-img"></div>
-                        <div *ngIf="i < text.events.length" class="timeline-content js--fadeInLeft">
-                            <h2>{{text.events[i].title}}</h2>
+                        <div *ngIf="i < text.events.length" class="timeline-content js--fadeInLeft" >
+                            <div class="timeline-img-header" id="event-img-{{i}}">
+                                <h2>{{text.events[i].title}}</h2>
+                            </div>
                             <div class="date">{{text.events[i].date}}</div>
                             <p>{{text.events[i].text}}</p>
                             <a class="bnt-more" href="javascript:void(0)">More</a>
@@ -19,7 +21,7 @@
                         <div class="timeline-img"></div>
                         <!-- Right Items -->
                         <div *ngIf="i + 1 < text.events.length" class="timeline-content timeline-card js--fadeInRight">
-                            <div class="timeline-img-header">
+                            <div class="timeline-img-header" id="event-img-{{i+1}}">
                                 <h2>{{text.events[i+1].title}}</h2>
                             </div>
                             <div class="date">{{text.events[i+1].date}}</div>
