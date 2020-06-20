@@ -1,4 +1,38 @@
 <div class="wrapper">
+<!--Section: Features v.3-->
+<section>
+    <!--Section heading-->
+    <h2 class="h1 py-5 font-weight-bold text-center">{{text.question}}</h2>
+    <!--Section description-->
+    <!-- <p class="px-5 mb-5 pb-3 lead grey-text text-center"></p> -->
+    <!--Grid row-->
+    <div class="row pt-2">
+      <!--Grid column-->
+      <div class="col text-center text-lg-left ">
+        <img src="../../../assets/img/train.png" alt="Hyperloop Train Rendered" class="img-fluid z-depth-0">
+      </div>
+      <!--Grid column-->
+      <!--Grid column-->
+      <div class="col flex-column" style="margin-top: auto; margin-bottom: auto;">
+        <!--Grid row-->
+        <div class="row pb-3" *ngFor="let feature of text.features">
+          <div class="col-2 col-md-1">
+            <mdb-icon fas icon="reply" size="lg" class="indigo-text"></mdb-icon>
+          </div>
+          <div class="col-10">
+            <h5 class="font-weight-bold text-left mb-3 dark-grey-text">{{feature.title}}</h5>
+            <p class="grey-text text-left">{{feature.detail}}</p>
+          </div>
+        </div>
+        <!--Grid row-->
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  
+  </section>
+  <!--Section: Features v.3-->
+
     <!-- Timeline -->
     <section class="timeline">
         <div class="container">

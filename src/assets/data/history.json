@@ -1,82 +1,93 @@
 [
     {
+        "question": "Why is it so great?",
+        "features": [
+            {
+                "title": "New",
+                "detail": "Hyperloop is a new mode of high speed transportation, similar to a train. A capsule travels inside a low pressure tube."
+            },
+            {
+                "title": "Fast",
+                "detail": "It is the almost perfect vacuum in the tube that reduces air friction and allows the capsule to travel at a speed that could theoretically reach 760 mph (1223 km / h)."
+            },
+            {
+                "title": "Electric",
+                "detail": "All fully electric, which can be powered by solar panels positioned above the tube. This technology would therefore be the fastest means of transport on Earth with the smallest environmental impact."
+            }
+        ],
         "events": [
             {
-                "date": "1799",
+                "date": "August 2013",
                 "title": "The birth",
-                "text": "In 1799, inventor George Medhurst proposed an idea to move goods through cast-iron pipes using air pressure.",
+                "text": "Elon Musk proposes the Hyperloop project in California",
+                "more": "bla 1",
                 "imgSrc": ""
             },
             {
-                "date": "1850",
-                "title": "Applied Theory",
-                "text": "Throughout the mid-1850s, several more pneumatic railways were built in Dublin, London, and Paris.",
-                "more": "The London Pneumatic Despatch system was meant to transport parcels, but it was large enough to carry people, too. To mark its opening, the Duke of Buckingham traveled through it in 1865.",
+                "date": "January 2015",
+                "title": "Un Titre....",
+                "text": "Announcement of the construction of a test track for Hyperloop capsules open to businesses and students",
+                "more": "bla 1",
                 "imgSrc": ""
             },
             {
-                "date": "1860",
-                "title": "Air in Action",
-                "text": "In the mid-1860s, South London constructed the Crystal Palace atmospheric railway, which ran through a park. A fan, which measured 22 feet in diameter, propelled the train.",
-                "more": "On return journeys, the fan's blades reversed, sucking the carriage backwards.",
+                "date": "January 2017",
+                "title": "A first",
+                "text": "First edition of the Hyperloop Pod Competition takes place",
+                "more": "bla 1",
                 "imgSrc": ""
             },
             {
-                "date": "1912",
-                "title": "The First Prototype",
-                "text": "In 1910, American rocket pioneer Robert Goddard designed a train that would go from Boston to New York in just 12 minutes. Though it was never built, it would've floated on magnets inside a vacuum-sealed tunnel.",
+                "date": "January 2020",
+                "title": "Hyperloop at Poly",
+                "text": "Creation of PolyLoop",
+                "more": "bla 1",
                 "imgSrc": ""
-            },
-            {
-                "date": "1960",
-                "title": "Modern Ideal's Birth",
-                "text": "By the end of the 19th century, most major cities used pneumatic tube systems to transport mail and other messages.",
-                "more": "Some still exist today at banks, hospitals, and factories. NASA started using pneumatic tubes as intra-office communication in the 1960s. And until 2011, a (now-closed) McDonald's in Edina, Minnesota used them to deliver Big Macs and fries to customers at its drive-through.",
-                "imgSrc": ""
-            },
-            {
-                "date": "2012",
-                "title": "The New Identity",
-                "text": "Elon Musk published his proposal for the Hyperloop in a 57-page white paper. According to his design, sealed pods containing 28 people each would whisk through tubes.",
-                "more": "A trip from NYC to DC would take 29 minutes, he tweeted in 2017. Hyperloop Transportation Technologies, a startup building off Musk's concept, is creating a 5-mile test track for a Hyperloop system in Quay Valley, California. Construction began in 2016, and the company is aiming for the train to reach 760 mph.",
-                "imgSrc": "../../../assets/img/history/musk.jpg"
-            },
-            {
-                "date": "2017",
-                "title": "First Successful test",
-                "text": "In July 2017, a startup called Hyperloop One successfully tested a full-scale system on its DevLoop test track in Nevada. Using maglevs, the vehicle reached a top speed of 70 mph.",
-                "more": "The company hopes to reach 250 mph.",
-                "imgSrc": "../../../assets/img/history/virgin.jpg"
             }
         ]
     },
     {
+        "question": "Pourquoi est-ce si grand?",
+        "features": [
+            {
+                "title": "Nouveau",
+                "detail": "L’Hyperloop est un nouveau mode de transport à haute vitesse, similaire à un train. Une capsule voyage à l’intérieur d’un tube à basse pression."
+            },
+            {
+                "title": "Rapide",
+                "detail": "C’est le vide presque parfait dans le tube qui réduit la friction de l’air et permet à la capsule de voyager à une vitesse qui pourrait théoriquement atteindre 760 mph (1 223 km/h)."
+            },
+            {
+                "title": "Électrique",
+                "detail": "Le tout entièrement électrique, pouvant être alimenté par des panneaux solaires positionnés au-dessus du tube. Cette technologie serait donc le moyen de transport le plus rapide sur Terre ayant le plus petit impact environnemental."
+            }
+        ],
         "events": [
             {
-                "date": "1799",
-                "title": "Premiere impression",
-                "text": "text 1",
+                "date": "Août 2013",
+                "title": "La naissance",
+                "text": "Elon Musk propose le projet Hyperloop en Californie ",
                 "more": "bla 1",
                 "imgSrc": ""
             },
             {
-                "date": "date 2",
-                "title": "title1",
-                "text": "text 1",
+                "date": "Janvier 2015",
+                "title": "Un Titre....",
+                "text": "Annonce de la construction d’une piste d’essai pour capsules Hyperloop ouverte aux entreprises et étudiants ",
                 "more": "bla 1",
                 "imgSrc": ""
             },
             {
-                "date": "date 3",
-                "title": "title1",
-                "text": "text 1",
+                "date": "Janvier 2017",
+                "title": "Une première",
+                "text": "Première édition du Hyperloop Pod Competition a lieu",
                 "more": "bla 1",
                 "imgSrc": ""
             },
             {
-                "date": "date 4",
-                "title": "title1",
-                "text": "text 1",
+                "date": "Janvier 2020",
+                "title": "Hyperloop a Poly",
+                "text": "Création de PolyLoop",
                 "more": "bla 1",
                 "imgSrc": ""
             }
