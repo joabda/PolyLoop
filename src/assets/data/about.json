@@ -5,7 +5,32 @@
             "Our mission is first of all to offer an opportunity for Polytechnique students to get involved in a new avant-garde project, innovative and completely different from other technical companies at Polytechnique de Montréal. Indeed, Polyloop is the only technical company working on a completely new project addressing a constantly developing, innovative and green technology. In the long term, we want this project to last over time and to become a respected technical society, not only at Polytechnique, but also internationally.",
             "The Polyloop project is to create a new technical company at Polytechnique Montreal which aims to participate in the Hyperloop Pod Competition in California."
         ],
-        "button": "Find out more"
+        "button": "Find out more", 
+        "comp": "The competition",
+        "introCompet": "In 2015, SpaceX announces the Hyperloop Pod Competition, a competition aimed at building the capsule that will travel the fastest in the SpaceX's tube.",
+        "moreInfo": "For more information visit ",
+        "features": [
+            {
+                "title": "International",
+                "details": "For this competition, teams of students from around the world have been working on the concept of their capsules for more than a year. The best of them are allowed to build a prototype and the tester in the SpaceX tube.",
+                "iconSrc": "../../../assets/img/icons/international.png"
+            },
+            {
+                "title": "Prestigious",
+                "details": "The most prestigious universities in the world participate in the competition it is not just a university competition but a means to get your hands in the dough of futuristic transport.",
+                "iconSrc": "../../../assets/img/icons/vip.png"
+            },
+            {
+                "title": "Experimental",
+                "details": "The competition establishes rules but leaves the freedom to present innovative ideas and promote an ideology of thought out of the box.",
+                "iconSrc": "../../../assets/img/icons/experimental.png"
+            },
+            {
+                "title": "Creative",
+                "details": "In order to have the best concept possible sometimes you need to leave some place for you creativity.",
+                "iconSrc": "../../../assets/img/icons/creative.png"
+            }
+        ]
     },
     {
         "title": "Notre Mission",
@@ -13,6 +38,31 @@
             "Notre mission est tout d’abord d’offrir une opportunité aux étudiants de Polytechnique de s’impliquer dans un nouveau projet avant-gardiste, novateur et complètement différent des autres sociétés techniques à Polytechnique de Montréal. En effet, Polyloop est la seule société technique qui travaille sur un projet complètement nouveau abordant une technologie constamment en développement, innovatrice et verte. À long terme, nous voulons que ce projet perdure dans le temps et qu’il devienne une société technique respectée, non seulement à Polytechnique, mais aussi internationalement.",
             "Le projet Polyloop est de créer une nouvelle société technique à Polytechnique Montréal qui a pour but de participer à l’Hyperloop Pod Competition en Californie."
         ],
-        "button": "En savoir plus"
+        "button": "En savoir plus",
+        "comp": "La competition",
+        "introCompet": "En 2015, SpaceX annonce le Hyperloop Pod Competition, une compétition ayant pour but de construire la capsule qui voyagera le plus rapidement dans le tube de SpaceX",
+        "moreInfo": "Pour plus d'information visiter ",
+        "features": [
+            {
+                "title": "Internationale",
+                "details": "Pour cette compétition, des équipes d’étudiants de partout à travers le monde travaillent le concept de leur capsules pour plus d'un an. Les meilleurs d’entre eux ont eu l’autorisation de construire un prototype et le tester dans le tube de SpaceX.",
+                "iconSrc": "../../../assets/img/icons/international.png"
+            },
+            {
+                "title": "Prestigieuse",
+                "details": "Les plus prestigieuses universités du monde participent a la competition ce n'est pas juste une competition universitaire mais un moyen pour mettre les mains dans la pate du transport futuriste.",
+                "iconSrc": "../../../assets/img/icons/vip.png"
+            },
+            {
+                "title": "Expérimentale",
+                "details": "La compétition établit des régles mais laisse la liberté de présenter des idées innovantes et promouvois une idéologie de pensée out of the box.",
+                "iconSrc": "../../../assets/img/icons/experimental.png"
+            },
+            {
+                "title": "Créative",
+                "details": "test4",
+                "iconSrc": "../../../assets/img/icons/creative.png"
+            }
+        ]
     }
 ]

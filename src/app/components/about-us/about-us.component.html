@@ -1,10 +1,10 @@
 <div class="wrapper">
     <div class="d-flex">
         <!-- Card -->
-        <mdb-card id="card"
-            class="card-image mb-3 mx-2">
+        <mdb-card id="card" class="card-image mb-3 mx-2">
             <!-- Content -->
-            <div class="text-white text-center col-lg-3 my-4 d-flex align-items-center rgba-black-strong py-5 px-4 align-self-end">
+            <div
+                class="text-white text-center col-lg-3 my-4 d-flex align-items-center rgba-black-strong py-5 px-4 align-self-end">
                 <div>
                     <h5 class="blue-text">
                         <mdb-icon fas icon="chart-pie"></mdb-icon>
@@ -22,4 +22,57 @@
         </mdb-card>
         <!-- Card -->
     </div>
+
+
+    <!-- COMPETITION -->
+    <section>
+        <!--Section heading-->
+        <h2 class="h1 py-5 font-weight-bold text-center">{{text.comp}}</h2>
+        <p class="px-5 mb-5 pb-3 lead grey-text text-center">{{text.introCompet}}</p>
+
+        <!--Grid row-->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-md-4" style="margin-top: auto; margin-bottom: auto;">
+                <!--Grid row-->
+                <div class="row mb-2" *ngFor="let item of col1">
+                    <div class="col-2">
+                        <img class="icon" [src]="item.iconSrc" fas>
+                    </div>
+                    <div class="col-10 text-left">
+                        <h5 class="font-weight-bold">{{item.title}}</h5>
+                        <p class="grey-text">{{item.details}}</p>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-4 mb-2 center-on-small-only flex-center">
+                <img src="../../../assets/img/tube.png" alt="" class="z-depth-0" id="center">
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-4" style="margin-top: auto; margin-bottom: auto;">
+                <!--Grid row-->
+                <div class="row mb-2" *ngFor="let item of col2">
+                    <div class="col-2">
+                        <img class="icon" [src]="item.iconSrc" fas>
+                    </div>
+                    <div class="col-10 text-left">
+                        <h5 class="font-weight-bold">{{item.title}}</h5>
+                        <p class="grey-text">{{item.details}}</p>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </div>
+            <!--Grid column-->
+        </div>
+        <!--Grid row-->
+        <p class="px-5 mb-5 pb-3 lead grey-text text-center">{{text.moreInfo}}
+            <a href="https://www.spacex.com/hyperloop">https://www.spacex.com/hyperloop</a>
+        </p>
+    </section>
 </div>
