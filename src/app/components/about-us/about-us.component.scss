@@ -20,7 +20,13 @@
     width: 30vw;
 }
 
-
 .icon {
     width: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    #center {
+        width: 90vw;
+        margin-bottom: 10px;
+    }
 }
