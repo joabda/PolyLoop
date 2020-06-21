@@ -22,13 +22,12 @@
                     <a type="button" class="nav-but" routerLink="{{link.href}}">{{link.name}}</a>
                 </li>
             </nav>
-            <span *ngIf="!isBigScreen" class="fill-remaining-space"></span>
-            <span *ngIf="isBigScreen" class="fill-remaining-space"></span>
             <li>
                 <a (click)="this.switchLanguage()">
                     <img id="lang-img" src="../../../assets/img/language/0.png" alt="Language" />
                 </a>
             </li>
+            <span *ngIf="isBigScreen" class="fill-remaining-space"></span>
         </mat-toolbar>
         <ng-content></ng-content>
     </mat-sidenav-content>

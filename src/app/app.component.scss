@@ -16,6 +16,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    max-width: 98vw;
     z-index: 9999;
     -webkit-box-sizing: border-box;
     -webkit-box-pack: justify;
@@ -32,6 +33,7 @@ app-footer {
     height: auto;
     justify-content: space-between;
     padding: 20px;
+    width: 100%;
 }
 
 #main {
