@@ -9,3 +9,26 @@
         width: 90px;
     }
 }
+
+#form {
+    width: 50vw !important;
+}
+
+@media screen and (max-width: 1000px) {
+    #form {
+        width: 70vw !important;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    #form {
+        width: 85vw !important;
+    }
+
+    #info-cont {
+        display: inline;
+        .col {
+            width: 100% !important;
+        }
+    }
+}

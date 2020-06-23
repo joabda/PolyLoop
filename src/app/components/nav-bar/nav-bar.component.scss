@@ -92,6 +92,14 @@
   overflow: hidden; 
 }  
 
+
+@media screen and (max-width: 935px) {
+  #lang-img {
+    margin-left: 0px;
+  }
+}
+
+
 @media screen and (max-width: 392px) {
   #lang-img {
     margin-left: 10px;
@@ -100,10 +108,7 @@
   }
 
   #logo {
-    width: 45vw;
+    width: 25vw;
   }
 }
 
-
-@media screen and (max-width: 379px) {
-}
