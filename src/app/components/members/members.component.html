@@ -3,7 +3,7 @@
     <!-- Banner Image -->
     <div class="row" style="max-width: 98vw;">
         <div class="col-md-12 mb-3">
-            <div class="view overlay d-flex justify-content-center" style="max-height: 50vh;">
+            <div class="view overlay d-flex justify-content-center banner-img" style="max-height: 50vh;">
                 <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(137).jpg" class="img-fluid "
                     alt="Team Image">
             </div>
@@ -22,7 +22,7 @@
             veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p> -->
         <!-- Grid row -->
         <div *ngFor="let team of teams">
-            <h2 class="subteam">{{team.subTeamName}}</h2>
+            <h2 class="subteam d-flex justify-content-center">{{team.subTeamName}}</h2>
             <div *ngFor="let member of team.members; let i = index" id="members-display">
                 <div *ngIf="i % 4 == 0" class="row justify-content-center">
                     <!-- Grid column -->

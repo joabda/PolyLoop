@@ -2,7 +2,7 @@
     <!-- Banner Image -->
     <div class="row" style="max-width: 98vw;">
         <div class="col-md-12 mb-3">
-            <div class="view overlay d-flex justify-content-center" style="max-height: 50vh;">
+            <div class="view overlay d-flex justify-content-center banner-img" style="max-height: 50vh;">
                 <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(137).jpg" class="img-fluid "
                     alt="Team Image">
             </div>
@@ -11,7 +11,7 @@
     <!-- Banner Image -->
 
     <!-- Gold Sponsors -->
-    <h3 class="category">{{sponsors[0].class}}</h3>
+    <h3 class="category d-flex justify-content-center">{{sponsors[0].class}}</h3>
     <div *ngFor="let element of sponsors[0].elements; let j = index" class="card-container">
         <div class="row justify-content-center" *ngIf="j % 2 == 0">
             <div *ngIf="j < sponsors[0].elements.length" class="col-md-4" style="margin-right: 5vw;">
@@ -52,7 +52,7 @@
     </div>
 
     <!-- Silver Sponsors -->
-    <h3 class="category">{{sponsors[1].class}}</h3>
+    <h3 class="category category d-flex justify-content-center">{{sponsors[1].class}}</h3>
     <div *ngFor="let element of sponsors[1].elements; let j = index">
         <div class="row row justify-content-center" *ngIf="j % 3 == 0">
             <div *ngIf="j < sponsors[1].elements.length" class="col-md-4" style="margin-right: 3vw;">

@@ -11,5 +11,4 @@ export class FooterComponent {
 
   socials = (_socials as any).default as Social[];
   constructor() { }
-
 }
