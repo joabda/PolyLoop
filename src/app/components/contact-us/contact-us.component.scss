@@ -10,12 +10,26 @@
     }
 }
 
+#polymtl {
+    margin-right: 2vw;
+    width: 46vw;
+}
+
 #form {
-    width: 50vw !important;
+    float: right !important;
+    width: 46vw !important;
 }
 
 @media screen and (max-width: 1000px) {
+    #polymtl {
+        margin: 0;
+        width: 100%;
+    }
+
     #form {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
         width: 70vw !important;
     }
 }

@@ -3,7 +3,7 @@
     <div class="card card-cascade wider reverse">
         <!-- Card image -->
         <div class="view view-cascade overlay">
-            <img class="card-img-top" src="../../../assets/img/tube.png" alt="Hyperloop tube rendered" id="tube">
+            <img class="card-img-top" src="../../../assets/img/airport.png" alt="Hyperloop tube rendered" id="tube">
             <a href="#!">
                 <div class="mask rgba-white-slight"></div>
             </a>
@@ -14,10 +14,6 @@
             <h4 class="card-title"><strong>{{text.title}}</strong></h4>
             <!-- Text -->
             <p class="card-text" *ngFor="let line of text.text">{{line}}<br></p>
-            <a mdbBtn color="blue" class="waves-light" mdbWavesEffect href="/hyperloop">
-                <mdb-icon far icon="clone" class="left"></mdb-icon>
-                {{text.button}}
-            </a>
         </div>
     </div>
     <!-- Mission -->
@@ -72,6 +68,11 @@
         <!--Grid row-->
         <p class="px-5 mb-5 pb-3 lead grey-text text-center">{{text.moreInfo}}
             <a href="https://www.spacex.com/hyperloop">https://www.spacex.com/hyperloop</a>
+            <br>
+            <a mdbBtn color="blue" class="waves-light" mdbWavesEffect href="/hyperloop">
+                <mdb-icon far icon="clone" class="left"></mdb-icon>
+                {{text.button}}
+            </a>
         </p>
     </section>
 </div>
