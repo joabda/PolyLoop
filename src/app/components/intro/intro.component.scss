@@ -22,18 +22,20 @@
 }
 
 .carousel-text {
-    top: 30%; 
-    left: 28%;
+    top: 40%; 
+    left: 5%;
     position: absolute;
     overflow: hidden;
 
     img {
+        float: left;
         height: auto;
-        width: 50vw;
+        width: 40vw;
     }
 
     .carousel-subtext {
-        margin-left: 30vw;
+        float: left;
+        margin-left: 10vw;
         img {
             height: auto;
             width: 25vw;
@@ -41,5 +43,20 @@
     }
 }
 
-@media screen and (max-width: 379px) {
+@media screen and (max-width: 800px) {
+    .carousel-text {
+        top: 30%; 
+        left: 28%;
+        position: absolute;
+        overflow: hidden;
+    
+        img {
+            float: none;
+        }
+    
+        .carousel-subtext {
+            float: none;
+            margin-left: 30vw;
+        }
+    }
 }
