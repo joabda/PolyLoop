@@ -37,7 +37,7 @@
                         </p>
                         <ul class="list-unstyled mb-0">
                             <!-- Linkedin -->
-                            <a class="p-2 fa-lg fb-ic" href="https://linkedin.com/in/{{team.members[i].linkedIn}}"  target="_blank">
+                            <a *ngIf="team.members[i].linkedIn !== undefined" class="p-2 fa-lg fb-ic" href="https://linkedin.com/in/{{team.members[i].linkedIn}}"  target="_blank">
                                 <mdb-icon fab icon="linkedin-in" class="blue-text"> </mdb-icon>
                             </a>
                         </ul>
@@ -55,7 +55,7 @@
                         </p>
                         <ul class="list-unstyled mb-0">
                             <!-- Linkedin -->
-                            <a class="p-2 fa-lg fb-ic" href="https://linkedin.com/in/{{team.members[i+ 1].linkedIn}}" target="_blank">
+                            <a *ngIf="team.members[i+1].linkedIn !== undefined" class="p-2 fa-lg fb-ic" href="https://linkedin.com/in/{{team.members[i+ 1].linkedIn}}" target="_blank">
                                 <mdb-icon fab icon="linkedin-in" class="blue-text"> </mdb-icon>
                             </a>
                         </ul>
@@ -73,7 +73,7 @@
                         </p>
                         <ul class="list-unstyled mb-0">
                             <!-- Linkedin -->
-                            <a class="p-2 fa-lg fb-ic" href="https://linkedin.com/in/{{team.members[i + 2].linkedIn}}" target="_blank">
+                            <a *ngIf="team.members[i+2].linkedIn !== undefined" class="p-2 fa-lg fb-ic" href="https://linkedin.com/in/{{team.members[i + 2].linkedIn}}" target="_blank">
                                 <mdb-icon fab icon="linkedin-in" class="blue-text"> </mdb-icon>
                             </a>
                         </ul>
@@ -91,7 +91,7 @@
                         </p>
                         <ul class="list-unstyled mb-0">
                             <!-- Linkedin -->
-                            <a class="p-2 fa-lg fb-ic" href="https://linkedin.com/in/{{team.members[i+ 3].linkedIn}}" target="_blank">
+                            <a *ngIf="team.members[i+3].linkedIn !== undefined" class="p-2 fa-lg fb-ic" href="https://linkedin.com/in/{{team.members[i+ 3].linkedIn}}" target="_blank">
                                 <mdb-icon fab icon="linkedin-in" class="blue-text"> </mdb-icon>
                             </a>
                         </ul>

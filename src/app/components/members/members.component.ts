@@ -27,6 +27,9 @@ export class MembersComponent implements OnDestroy {
     public data: DataService,
     private shortcut: HotkeysService) {
       data.language.subscribe( () => this.teams = data.getMembers() );
+      this.teams.forEach( el => {
+        el.members.forEach( el1 => console.log(el1.linkedIn))
+      })
       // this.allNames = this.getAllNames()
 
       // this.filteredMembers = this.titleControl.valueChanges
