@@ -1,6 +1,4 @@
 import { Component, ViewChild, OnDestroy } from '@angular/core';
-import * as _members from '../../../assets/data/members.json';
-import { Member } from 'src/app/interfaces/member';
 import { DataService } from 'src/app/services/data/data.service';
 import { FormControl } from '@angular/forms';
 import { MatInput } from '@angular/material/input';
@@ -17,18 +15,18 @@ import { TeamJSON } from 'src/app/interfaces/json/teamJSON';
 export class MembersComponent implements OnDestroy {
 
   private subscriptions: Subscription[] = [];
-  teams: TeamJSON[] = (_members as any).default as TeamJSON[];
   // titleControl: FormControl = new FormControl()
   // searchedMembers: Member[] = this.members;
   // allNames: string[];
   // title: string;
   // filteredMembers: Observable<string[]>;
   // @ViewChild(MatInput) private filter: MatInput;
+  teams: TeamJSON[];
 
   constructor(
     public data: DataService,
     private shortcut: HotkeysService) {
-
+      data.language.subscribe( () => this.teams = data.getMembers() );
       // this.allNames = this.getAllNames()
 
       // this.filteredMembers = this.titleControl.valueChanges

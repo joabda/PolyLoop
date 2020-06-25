@@ -1,37 +1,410 @@
 [
-    {
-        "subTeamName": "Executive",
-        "members": [
-            {
-                "name": "Jason LEBEAU",
-                "pictureURL": "../../../assets/img/home.jpg",
-                "role": "President"
-            },
-            {
-                "name": "Janette CHARNEAU",
-                "pictureURL": "../../../assets/img/home.jpg",
-                "role": "VP"
-            },
-            {
-                "name": "Kaleb BANG",
-                "pictureURL": "../../../assets/img/home.jpg",
-                "role": "VP-Sport"
-            }
-        ]
-    }, 
-    {
-        "subTeamName": "Communication", 
-        "members": [
-            {
-                "name": "Nicole PROUX",
-                "pictureURL": "../../../assets/img/home.jpg",
-                "role": "VP Finance"
-            },
-            {
-                "name": "Sebastien LOZON",
-                "pictureURL": "../../../assets/img/home.jpg",
-                "role": "VP Organisation"
-            }
-        ]
-    }
+    [
+        {
+            "subTeamName": "Executive",
+            "members": [
+                {
+                    "name": "François Carrier",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Director",
+                    "linkedIn": "fran%C3%A7ois-carrier-87502782"
+                },
+                {
+                    "name": "Simon Lemieux",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "VP Sponsorship"
+                },
+                {
+                    "name": "Meredith Alousi-Jones",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "VP Communications",
+                    "linkedIn": "meredith-alousi-jones"
+                },
+                {
+                    "name": "Eloi Magniez",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Treasurer",
+                    "linkedIn": "eloi-mgz-515b24170"
+                }
+            ]
+        },
+        {
+            "subTeamName": "Propulsion",
+            "members": [
+                {
+                    "name": "Jérémie Rivière",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Secretary"
+                },
+                {
+                    "name": "Mathieu Andorra",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Loïc Cummings-Jomphe",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Tony Tran",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "tony-tran-20ab721b0"
+                },
+                {
+                    "name": "Laure Corazza",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                }
+            ]
+        },
+        {
+            "subTeamName": "Energy",
+            "members": [
+                {
+                    "name": "Axelle Legoassé-Mouneu",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Team Lead"
+                },
+                {
+                    "name": "Carlos Nassar",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "nassarcarlos"
+                },
+                {
+                    "name": "Raphaël Plante",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Pierre-Olivier Andrieux",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Joséphine de Noray",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Reine Costantine",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "reine-costantine-27a8361b0/"
+                }
+            ]
+        },
+        {
+            "subTeamName": "Braking",
+            "members": [
+                {
+                    "name": "Tommy Landry",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Raphaël Plante",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Team Lead",
+                    "linkedIn": "nassarcarlos"
+                },
+                {
+                    "name": "Jacob Fournier-Beau",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "jacob-fournier-beau-a992b9159/"
+                }
+            ]
+        },
+        {
+            "subTeamName": "Systems and electronics",
+            "members": [
+                {
+                    "name": "Carl-andré Harraka",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Sébastien Rousseau",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Arnaud Dalbec-Constant",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "arnaud-dalbec-constant-0a10301a7"
+                },
+                {
+                    "name": "Samuel Laporte",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Louis Plessis",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "louisplessis"
+                },
+                {
+                    "name": "Oussama Chobah",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Charles Gauthier",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "charles-gauthier-b56826170/"
+                },
+                {
+                    "name": "Reine Costantine",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "reine-costantine-27a8361b0"
+                },
+                {
+                    "name": "Joe Abdo",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                }
+            ]
+        },
+        {
+            "subTeamName": "Structure and aero",
+            "members": [
+                {
+                    "name": "Frédéric Auger",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Tommy Landry",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Team Lead"
+                },
+                {
+                    "name": "Anne-Laurence Trudeau",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Manager"
+                },
+                {
+                    "name": "Ève Chouinard ",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Secretary"
+                },
+                {
+                    "name": "Charlotte Michaud-Tardif",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "charlotte-michaud-tardif-5a26a91a0"
+                }
+            ]
+        }
+    ], 
+    [
+        {
+            "subTeamName": "Executif",
+            "members": [
+                {
+                    "name": "François Carrier",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Directeur",
+                    "linkedIn": "fran%C3%A7ois-carrier-87502782"
+                },
+                {
+                    "name": "Simon Lemieux",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "VP Commandite"
+                },
+                {
+                    "name": "Meredith Alousi-Jones",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "VP Communications",
+                    "linkedIn": "meredith-alousi-jones"
+                },
+                {
+                    "name": "Eloi Magniez",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Trésorier",
+                    "linkedIn": "eloi-mgz-515b24170"
+                }
+            ]
+        },
+        {
+            "subTeamName": "Propulsion",
+            "members": [
+                {
+                    "name": "Jérémie Rivière",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Secrétaire"
+                },
+                {
+                    "name": "Mathieu Andorra",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Loïc Cummings-Jomphe",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Tony Tran",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "tony-tran-20ab721b0"
+                },
+                {
+                    "name": "Laure Corazza",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                }
+            ]
+        },
+        {
+            "subTeamName": "Alimentation",
+            "members": [
+                {
+                    "name": "Axelle Legoassé-Mouneu",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Chef d'équipe"
+                },
+                {
+                    "name": "Carlos Nassar",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "nassarcarlos"
+                },
+                {
+                    "name": "Raphaël Plante",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Pierre-Olivier Andrieux",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Joséphine de Noray",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Reine Costantine",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "reine-costantine-27a8361b0/"
+                }
+            ]
+        },
+        {
+            "subTeamName": "Freinage",
+            "members": [
+                {
+                    "name": "Tommy Landry",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Raphaël Plante",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Chef d'équipe",
+                    "linkedIn": "nassarcarlos"
+                },
+                {
+                    "name": "Jacob Fournier-Beau",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "jacob-fournier-beau-a992b9159/"
+                }
+            ]
+        },
+        {
+            "subTeamName": "Systèmes et électronique",
+            "members": [
+                {
+                    "name": "Carl-andré Harraka",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Sébastien Rousseau",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Arnaud Dalbec-Constant",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "arnaud-dalbec-constant-0a10301a7"
+                },
+                {
+                    "name": "Samuel Laporte",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Louis Plessis",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "louisplessis"
+                },
+                {
+                    "name": "Oussama Chobah",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Charles Gauthier",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "charles-gauthier-b56826170/"
+                },
+                {
+                    "name": "Reine Costantine",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "reine-costantine-27a8361b0"
+                },
+                {
+                    "name": "Joe Abdo",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                }
+            ]
+        },
+        {
+            "subTeamName": "Structure et aéro",
+            "members": [
+                {
+                    "name": "Frédéric Auger",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": ""
+                },
+                {
+                    "name": "Tommy Landry",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Chef d'équipe"
+                },
+                {
+                    "name": "Anne-Laurence Trudeau",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Gestionnaire"
+                },
+                {
+                    "name": "Ève Chouinard ",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "Secrétaire"
+                },
+                {
+                    "name": "Charlotte Michaud-Tardif",
+                    "pictureURL": "../../../assets/img/home.jpg",
+                    "role": "",
+                    "linkedIn": "charlotte-michaud-tardif-5a26a91a0"
+                }
+            ]
+        }
+    ]
 ]

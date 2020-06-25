@@ -11,6 +11,8 @@ import * as _sponsors from 'src/assets/data/sponsors.json';
 import * as _contactUs from 'src/assets/data/contact-us.json';
 import * as _about from 'src/assets/data/about.json';
 import * as _history from 'src/assets/data/history.json';
+import * as _members from '../../../assets/data/members.json';
+import { TeamJSON } from 'src/app/interfaces/json/teamJSON';
 
 @Injectable()
 export class DataService {
@@ -22,6 +24,7 @@ export class DataService {
   static about_ = (_about as any).default as AboutJSON[];
   static sponsors_ = (_sponsors as any).default as SponsorJSON[];
   static history_ = (_history as any).default as HistoryJSON[];
+  static teams_: any[] = (_members as any).default;
 
   constructor() {
   }
@@ -41,6 +44,10 @@ export class DataService {
 
   getHistory(): HistoryJSON {
     return DataService.history_[this.language.value];
+  }
+
+  getMembers(): TeamJSON[] {
+    return DataService.teams_[this.language.value] as TeamJSON[];
   }
 
   getSponsors(): SponsorJSON[] {
