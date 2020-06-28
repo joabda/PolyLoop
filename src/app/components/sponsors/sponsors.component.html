@@ -1,109 +1,110 @@
-<div class="wrapper">
+<div>
     <!-- Banner Image -->
-    <div class="row" style="max-width: 98vw;">
-        <div class="col-md-12 mb-3">
-            <div class="view overlay d-flex justify-content-center banner-img" style="max-height: 50vh;">
-                <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(137).jpg" class="img-fluid "
-                    alt="Team Image">
+    <div class="row" style="margin: 0;">
+        <div class="col-md-12 mb-3" style="padding: 0;">
+            <div class="view overlay d-flex justify-content-center banner-img" style="max-height: 60vh;">
+                <img src="../../../assets/img/airport.png" class="img-fluid " alt="Team Image">
             </div>
         </div>
     </div>
     <!-- Banner Image -->
 
-    <!-- Gold Sponsors -->
-    <h3 class="category d-flex justify-content-center">{{sponsors[0].class}}</h3>
-    <div *ngFor="let element of sponsors[0].elements; let j = index" class="card-container">
-        <div class="row justify-content-center" *ngIf="j % 2 == 0">
-            <div *ngIf="j < sponsors[0].elements.length" class="col-md-4" style="margin-right: 5vw;">
-                <div class="flip-card sponsor-1">
-                    <a href="{{sponsors[0].elements[j].url}}">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="../../../assets/img/sponsors/{{sponsors[0].elements[j].pictureURL}}"
-                                    alt="{{sponsors[0].elements[j].name}}">
-                            </div>
-                            <div class="flip-card-back">
-                                <div>
-                                    {{sponsors[0].elements[j].description}}
+    <div class="wrapper">
+        <!-- Gold Sponsors -->
+        <h3 class="category d-flex justify-content-center">{{text[0].class}}</h3>
+        <div *ngFor="let element of text[0].elements; let j = index" class="card-container">
+            <div class="row justify-content-center" *ngIf="j % 2 == 0">
+                <div *ngIf="j < text[0].elements.length" class="col-md-4" style="margin-right: 5vw;">
+                    <div class="flip-card sponsor-1">
+                        <a href="{{text[0].elements[j].url}}">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="../../../assets/img/sponsors/{{text[0].elements[j].pictureURL}}"
+                                        alt="{{text[0].elements[j].name}}">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div>
+                                        {{text[0].elements[j].description}}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div *ngIf="j + 1 < sponsors[0].elements.length" class="col-md-4" style="margin-right: 5vw;">
-                <div class="flip-card sponsor-1">
-                    <a href="{{sponsors[0].elements[j+1].url}}">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="../../../assets/img/sponsors/{{sponsors[0].elements[j+1].pictureURL}}"
-                                    alt="{{sponsors[0].elements[j+1].name}}">
-                            </div>
-                            <div class="flip-card-back">
-                                <div>
-                                    {{sponsors[0].elements[j+1].description}}
+                <div *ngIf="j + 1 < text[0].elements.length" class="col-md-4" style="margin-right: 5vw;">
+                    <div class="flip-card sponsor-1">
+                        <a href="{{text[0].elements[j+1].url}}">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="../../../assets/img/sponsors/{{text[0].elements[j+1].pictureURL}}"
+                                        alt="{{text[0].elements[j+1].name}}">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div>
+                                        {{text[0].elements[j+1].description}}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Silver Sponsors -->
-    <h3 class="category category d-flex justify-content-center">{{sponsors[1].class}}</h3>
-    <div *ngFor="let element of sponsors[1].elements; let j = index">
-        <div class="row row justify-content-center" *ngIf="j % 3 == 0">
-            <div *ngIf="j < sponsors[1].elements.length" class="col-md-4" style="margin-right: 3vw;">
-                <div class="flip-card sponsor-2">
-                    <a href="{{sponsors[1].elements[j].url}}">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="../../../assets/img/sponsors/{{sponsors[1].elements[j].pictureURL}}"
-                                    alt="{{sponsors[1].elements[j].name}}">
-                            </div>
-                            <div class="flip-card-back">
-                                <div>
-                                    {{sponsors[1].elements[j].description}}
+        <!-- Silver Sponsors -->
+        <h3 class="category category d-flex justify-content-center">{{text[1].class}}</h3>
+        <div *ngFor="let element of text[1].elements; let j = index">
+            <div class="row row justify-content-center" *ngIf="j % 3 == 0">
+                <div *ngIf="j < text[1].elements.length" class="col-md-4" style="margin-right: 3vw;">
+                    <div class="flip-card sponsor-2">
+                        <a href="{{text[1].elements[j].url}}">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="../../../assets/img/sponsors/{{text[1].elements[j].pictureURL}}"
+                                        alt="{{text[1].elements[j].name}}">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div>
+                                        {{text[1].elements[j].description}}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div *ngIf="j + 1 < sponsors[1].elements.length" class="col-md-4" style="margin-right: 3vw;">
-                <div class="flip-card sponsor-2">
-                    <a href="{{sponsors[1].elements[j+1].url}}">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="../../../assets/img/sponsors/{{sponsors[1].elements[j+1].pictureURL}}"
-                                    alt="{{sponsors[1].elements[j+1].name}}">
-                            </div>
-                            <div class="flip-card-back">
-                                <div>
-                                    {{sponsors[1].elements[j+1].description}}
+                <div *ngIf="j + 1 < text[1].elements.length" class="col-md-4" style="margin-right: 3vw;">
+                    <div class="flip-card sponsor-2">
+                        <a href="{{text[1].elements[j+1].url}}">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="../../../assets/img/sponsors/{{text[1].elements[j+1].pictureURL}}"
+                                        alt="{{text[1].elements[j+1].name}}">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div>
+                                        {{text[1].elements[j+1].description}}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div *ngIf="j + 2 < sponsors[1].elements.length" class="col-md-4" style="margin-right: 3vw;">
-                <div class="flip-card sponsor-2">
-                    <a href="{{sponsors[1].elements[j+2].url}}">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="../../../assets/img/sponsors/{{sponsors[1].elements[j+2].pictureURL}}"
-                                    alt="{{sponsors[1].elements[j+2].name}}">
-                            </div>
-                            <div class="flip-card-back">
-                                <div>
-                                    {{sponsors[1].elements[j+2].description}}
+                <div *ngIf="j + 2 < text[1].elements.length" class="col-md-4" style="margin-right: 3vw;">
+                    <div class="flip-card sponsor-2">
+                        <a href="{{text[1].elements[j+2].url}}">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="../../../assets/img/sponsors/{{text[1].elements[j+2].pictureURL}}"
+                                        alt="{{text[1].elements[j+2].name}}">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div>
+                                        {{text[1].elements[j+2].description}}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

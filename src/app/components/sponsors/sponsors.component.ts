@@ -10,10 +10,10 @@ import { SponsorJSON } from 'src/app/interfaces/json/sponsorJSON';
 })
 export class SponsorsComponent {
 
-  sponsors: SponsorJSON[];
+  text: SponsorJSON[];
 
   constructor(public data: DataService) {
-    this.sponsors = data.getSponsors();
+    data.language.subscribe( () => this.text = data.getSponsors());
   }
 
 }
