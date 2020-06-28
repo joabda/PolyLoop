@@ -10,6 +10,15 @@
     <!-- Banner Image -->
 
     <div class="wrapper-not-top ">
+
+        <!-- Join Block -->
+        <div class="d-flex justify-content-center">
+            <a src="" target="_blank">
+                <img class="" src="../../../assets/img/icons/pdf.png" alt="Download PDF Document" title="Download Our Sponsor Bla bla">
+            </a>
+        </div>
+        <!-- Join Block -->
+
         <!-- Gold Sponsors -->
         <h3 class="category d-flex justify-content-center">{{text[0].class}}</h3>
         <div *ngFor="let element of text[0].elements; let j = index" class="card-container">
@@ -53,9 +62,9 @@
 
         <!-- Silver Sponsors -->
         <h3 class="category category d-flex justify-content-center">{{text[1].class}}</h3>
-        <div *ngFor="let element of text[1].elements; let j = index">
+        <div *ngFor="let element of text[1].elements; let j = index" style="margin-bottom: 20px;">
             <div class="row row justify-content-center" *ngIf="j % 3 == 0">
-                <div *ngIf="j < text[1].elements.length" class="col-md-4" style="margin-right: 3vw;">
+                <div *ngIf="j < text[1].elements.length" class="col-md-3" style="margin-right: 3vw;">
                     <div class="flip-card sponsor-2">
                         <a href="{{text[1].elements[j].url}}">
                             <div class="flip-card-inner">
@@ -72,7 +81,7 @@
                         </a>
                     </div>
                 </div>
-                <div *ngIf="j + 1 < text[1].elements.length" class="col-md-4" style="margin-right: 3vw;">
+                <div *ngIf="j + 1 < text[1].elements.length" class="col-md-3" style="margin-right: 3vw;">
                     <div class="flip-card sponsor-2">
                         <a href="{{text[1].elements[j+1].url}}">
                             <div class="flip-card-inner">
@@ -89,7 +98,7 @@
                         </a>
                     </div>
                 </div>
-                <div *ngIf="j + 2 < text[1].elements.length" class="col-md-4" style="margin-right: 3vw;">
+                <div *ngIf="j + 2 < text[1].elements.length" class="col-md-3" style="margin-right: 3vw;">
                     <div class="flip-card sponsor-2">
                         <a href="{{text[1].elements[j+2].url}}">
                             <div class="flip-card-inner">
