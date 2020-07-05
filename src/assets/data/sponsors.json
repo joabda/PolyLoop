@@ -1,42 +1,100 @@
 [
     {
-        "class": "Gold",
-        "elements": [
+        "title": "Title",
+        "text": [
+            "text 1 EN",
+            "text 2 EN"
+        ],
+        "sponsors": [
             {
-                "name": "Polymtl",
-                "pictureURL": "polymtl.png",
-                "url": "https://polymtl.ca",
-                "description": "Description Polymtl"
-            },
+                "class": "Gold",
+                "elements": [
+                    {
+                        "name": "Polymtl",
+                        "pictureURL": "polymtl.png",
+                        "url": "https://polymtl.ca",
+                        "description": "Description Polymtl EN"
+                    },
+                    {
+                        "name": "AEP",
+                        "pictureURL": "aep.png",
+                        "url": "https://aep.polymtl.ca",
+                        "description": "Description AEP EN"
+                    }
+                ]
+            }, 
             {
-                "name": "AEP",
-                "pictureURL": "aep.png",
-                "url": "https://aep.polymtl.ca",
-                "description": "Description AEP"
+                
+                "class": "Silver",
+                "elements": [
+                    {
+                        "name": "spacex",
+                        "pictureURL": "spacex.jpg",
+                        "url": "spacex.com",
+                        "description": "Description SpaceX EN"
+                    },
+                    {
+                        "name": "stm",
+                        "pictureURL": "stm.png",
+                        "url": "stm.ca",
+                        "description": "Description STM EN"
+                    },
+                    {
+                        "name": "virgin",
+                        "pictureURL": "virgin.png",
+                        "url": "",
+                        "description": "Description Virgin EN"
+                    }
+                ]
             }
         ]
-    }, 
-    {
-        
-        "class": "Silver",
-        "elements": [
+    },     {
+        "title": "Titre",
+        "text": [
+            "text 1 FR",
+            "text 2 FR"
+        ],
+        "sponsors": [
             {
-                "name": "spacex",
-                "pictureURL": "spacex.jpg",
-                "url": "spacex.com",
-                "description": "Description SpaceX"
-            },
+                "class": "Gold",
+                "elements": [
+                    {
+                        "name": "Polymtl",
+                        "pictureURL": "polymtl.png",
+                        "url": "https://polymtl.ca",
+                        "description": "Description Polymtl FR"
+                    },
+                    {
+                        "name": "AEP",
+                        "pictureURL": "aep.png",
+                        "url": "https://aep.polymtl.ca",
+                        "description": "Description AEP FR"
+                    }
+                ]
+            }, 
             {
-                "name": "stm",
-                "pictureURL": "stm.png",
-                "url": "stm.ca",
-                "description": "Description STM"
-            },
-            {
-                "name": "virgin",
-                "pictureURL": "virgin.png",
-                "url": "",
-                "description": "Description Virgin"
+                
+                "class": "Silver",
+                "elements": [
+                    {
+                        "name": "spacex",
+                        "pictureURL": "spacex.jpg",
+                        "url": "spacex.com",
+                        "description": "Description SpaceX FR"
+                    },
+                    {
+                        "name": "stm",
+                        "pictureURL": "stm.png",
+                        "url": "stm.ca",
+                        "description": "Description STM FR"
+                    },
+                    {
+                        "name": "virgin",
+                        "pictureURL": "virgin.png",
+                        "url": "",
+                        "description": "Description Virgin FR"
+                    }
+                ]
             }
         ]
     }

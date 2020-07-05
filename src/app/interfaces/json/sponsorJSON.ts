@@ -1,6 +1,7 @@
 import { Sponsor } from '../sponsor';
 
 export interface SponsorJSON {
-    class: string, 
-    elements: Sponsor[]
+    title: string,
+    text: string[],
+    sponsors: {class: string, elements: Sponsor[]}[]
 }

@@ -50,8 +50,9 @@ export class DataService {
     return DataService.teams_[this.language.value] as TeamJSON[];
   }
 
-  getSponsors(): SponsorJSON[] {
-    return DataService.sponsors_;
+  getSponsors(): SponsorJSON {
+    console.log(DataService.sponsors_[this.language.value]);
+    return DataService.sponsors_[this.language.value];
   }
 
   getContactUs(): ContactUsJSON {
