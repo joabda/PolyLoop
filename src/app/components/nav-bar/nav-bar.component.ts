@@ -33,6 +33,10 @@ export class NavBarComponent implements OnInit {
     {
       name   : '',
       href   : '/contact'
+    },
+    {
+      name   : '',
+      href   : ''
     }
   ];
 
@@ -58,9 +62,9 @@ export class NavBarComponent implements OnInit {
       );
   }
 
-  switchLanguage(): void {
-    (document.getElementById("lang-img") as HTMLImageElement).src = `../../../assets/img/language/${this.data.language.value}.png`;
-    this.data.language.next((this.data.language.value === Language.FR) ? Language.EN : Language.FR);
+  switchLanguage(toLang: string): void {
+    // (document.getElementById("lang-img") as HTMLImageElement).src = `../../../assets/img/language/${this.data.language.value}.png`;
+    this.data.language.next((toLang === 'FR') ? Language.FR : Language.EN);
     this.updateText();
   }
 

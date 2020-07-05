@@ -26,6 +26,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { HttpClientModule } from '@angular/common/http';
 import { HyperloopComponent } from './components/hyperloop/hyperloop.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatIconModule,
     MatInputModule,
     MatListModule,
+    MatMenuModule,
     MatSidenavModule,
     MatSnackBarModule,
     MatToolbarModule,
