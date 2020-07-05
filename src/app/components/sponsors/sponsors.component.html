@@ -6,6 +6,14 @@
                 <img src="../../../assets/img/airport.png" class="img-fluid " alt="Team Image">
             </div>
         </div>
+        <!-- Card content -->
+        <div class="card-body card-body-cascade text-center">
+            <!-- Title -->
+            <h4 class="card-title"><strong>TITLE of text</strong></h4>
+            <!-- Text -->
+            <p class="card-text">Text 1<br></p>
+            <p class="card-text">Text 2<br></p>
+        </div>
     </div>
     <!-- Banner Image -->
 
@@ -14,7 +22,8 @@
         <!-- Join Block -->
         <div class="d-flex justify-content-center">
             <a src="" target="_blank">
-                <img class="" src="../../../assets/img/icons/pdf.png" alt="Download PDF Document" title="Download Our Sponsor Bla bla">
+                <img class="" src="../../../assets/img/icons/pdf.png" alt="Download PDF Document"
+                    title="Download Our Sponsor Bla bla">
             </a>
         </div>
         <!-- Join Block -->
@@ -23,39 +32,47 @@
         <h3 class="category d-flex justify-content-center">{{text[0].class}}</h3>
         <div *ngFor="let element of text[0].elements; let j = index" class="card-container">
             <div class="row justify-content-center" *ngIf="j % 2 == 0">
-                <div *ngIf="j < text[0].elements.length" class="col-md-4" style="margin-right: 5vw;">
-                    <div class="flip-card sponsor-1">
-                        <a href="{{text[0].elements[j].url}}">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="../../../assets/img/sponsors/{{text[0].elements[j].pictureURL}}"
-                                        alt="{{text[0].elements[j].name}}">
-                                </div>
-                                <div class="flip-card-back">
-                                    <div>
-                                        {{text[0].elements[j].description}}
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Card Regular -->
+                <div class="card card-cascade sponsor-1">
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top img-1" src="../../../assets/img/sponsors/{{text[0].elements[j].pictureURL}}"
+                            alt="{{text[0].elements[j].name}}">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
                         </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade text-center">
+
+                        <!-- Title -->
+                        <h4 class="card-title"><strong>{{text[0].elements[j].name}}</strong></h4>
+                        <!-- Text -->
+                        <p class="card-text">{{text[0].elements[j].description}}</p>
                     </div>
                 </div>
+                <!-- Card Regular -->
                 <div *ngIf="j + 1 < text[0].elements.length" class="col-md-4" style="margin-right: 5vw;">
-                    <div class="flip-card sponsor-1">
-                        <a href="{{text[0].elements[j+1].url}}">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="../../../assets/img/sponsors/{{text[0].elements[j+1].pictureURL}}"
-                                        alt="{{text[0].elements[j+1].name}}">
-                                </div>
-                                <div class="flip-card-back">
-                                    <div>
-                                        {{text[0].elements[j+1].description}}
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <!-- Card Regular -->
+                    <div class="card card-cascade sponsor-1">
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top img-1" src="../../../assets/img/sponsors/{{text[0].elements[j+1].pictureURL}}"
+                                alt="{{text[0].elements[j+1].name}}">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center">
+    
+                            <!-- Title -->
+                            <h4 class="card-title"><strong>{{text[0].elements[j+1].name}}</strong></h4>
+                            <!-- Text -->
+                            <p class="card-text">{{text[0].elements[j+1].description}}</p>
+                        </div>
                     </div>
+                    <!-- Card Regular -->
                 </div>
             </div>
         </div>
@@ -65,55 +82,70 @@
         <div *ngFor="let element of text[1].elements; let j = index" style="margin-bottom: 20px;">
             <div class="row row justify-content-center" *ngIf="j % 3 == 0">
                 <div *ngIf="j < text[1].elements.length" class="col-md-3" style="margin-right: 3vw;">
-                    <div class="flip-card sponsor-2">
-                        <a href="{{text[1].elements[j].url}}">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="../../../assets/img/sponsors/{{text[1].elements[j].pictureURL}}"
-                                        alt="{{text[1].elements[j].name}}">
-                                </div>
-                                <div class="flip-card-back">
-                                    <div>
-                                        {{text[1].elements[j].description}}
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <!-- Card Regular -->
+                    <div class="card card-cascade sponsor-2">
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top img-1" src="../../../assets/img/sponsors/{{text[1].elements[j].pictureURL}}"
+                                alt="{{text[1].elements[j].name}}">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center">
+    
+                            <!-- Title -->
+                            <h4 class="card-title"><strong>{{text[1].elements[j].name}}</strong></h4>
+                            <!-- Text -->
+                            <p class="card-text">{{text[1].elements[j].description}}</p>
+                        </div>
                     </div>
+                    <!-- Card Regular -->
                 </div>
                 <div *ngIf="j + 1 < text[1].elements.length" class="col-md-3" style="margin-right: 3vw;">
-                    <div class="flip-card sponsor-2">
-                        <a href="{{text[1].elements[j+1].url}}">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="../../../assets/img/sponsors/{{text[1].elements[j+1].pictureURL}}"
-                                        alt="{{text[1].elements[j+1].name}}">
-                                </div>
-                                <div class="flip-card-back">
-                                    <div>
-                                        {{text[1].elements[j+1].description}}
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <!-- Card Regular -->
+                    <div class="card card-cascade sponsor-2">
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top img-1" src="../../../assets/img/sponsors/{{text[1].elements[j+1].pictureURL}}"
+                                alt="{{text[1].elements[j+1].name}}">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center">
+    
+                            <!-- Title -->
+                            <h4 class="card-title"><strong>{{text[1].elements[j+1].name}}</strong></h4>
+                            <!-- Text -->
+                            <p class="card-text">{{text[1].elements[j+1].description}}</p>
+                        </div>
                     </div>
+                    <!-- Card Regular -->
                 </div>
                 <div *ngIf="j + 2 < text[1].elements.length" class="col-md-3" style="margin-right: 3vw;">
-                    <div class="flip-card sponsor-2">
-                        <a href="{{text[1].elements[j+2].url}}">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="../../../assets/img/sponsors/{{text[1].elements[j+2].pictureURL}}"
-                                        alt="{{text[1].elements[j+2].name}}">
-                                </div>
-                                <div class="flip-card-back">
-                                    <div>
-                                        {{text[1].elements[j+2].description}}
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <!-- Card Regular -->
+                    <div class="card card-cascade sponsor-2">
+                        <!-- Card image -->
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top img-1" src="../../../assets/img/sponsors/{{text[1].elements[j+2].pictureURL}}"
+                                alt="{{text[1].elements[j+2].name}}">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card-body card-body-cascade text-center">
+    
+                            <!-- Title -->
+                            <h4 class="card-title"><strong>{{text[1].elements[j+2].name}}</strong></h4>
+                            <!-- Text -->
+                            <p class="card-text">{{text[1].elements[j+2].description}}</p>
+                        </div>
                     </div>
+                    <!-- Card Regular -->
                 </div>
             </div>
         </div>
