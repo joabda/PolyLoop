@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
@@ -12,7 +12,7 @@ import { link } from 'fs';
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss']
 })
-export class NavBarComponent implements OnInit {
+export class NavBarComponent implements OnInit, AfterViewInit {
 
   links = [
     {
@@ -54,7 +54,7 @@ export class NavBarComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.breakpointObserver
       .observe(['(min-width: 935px)'])
       .subscribe((size: BreakpointState) => {
@@ -63,10 +63,14 @@ export class NavBarComponent implements OnInit {
       );
   }
 
+  ngAfterViewInit(): void {
+    this.changePage(0);
+  }
+
   changePage(pageNumber: number): void {
     for(let i = 0; i < this.links.length; ++i) {
       const targetPage = document.getElementById(i.toString());
-      if(targetPage !== undefined) {
+      if(targetPage !== null) {
         if(i === pageNumber) {
           targetPage.style.color = '#57BBBF';
           continue;
