@@ -5,7 +5,6 @@ import { map, shareReplay } from 'rxjs/operators';
 import { MatDialog } from '@angular/material/dialog';
 import { DataService } from 'src/app/services/data/data.service';
 import { Language } from 'src/app/enums/language';
-import { link } from 'fs';
 
 @Component({
   selector: 'app-nav-bar',
