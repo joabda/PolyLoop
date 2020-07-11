@@ -5,6 +5,7 @@ import { map, shareReplay } from 'rxjs/operators';
 import { MatDialog } from '@angular/material/dialog';
 import { DataService } from 'src/app/services/data/data.service';
 import { Language } from 'src/app/enums/language';
+import { link } from 'fs';
 
 @Component({
   selector: 'app-nav-bar',
@@ -62,10 +63,23 @@ export class NavBarComponent implements OnInit {
       );
   }
 
+  changePage(pageNumber: number): void {
+    for(let i = 0; i < this.links.length; ++i) {
+      const targetPage = document.getElementById(i.toString());
+      if(targetPage !== undefined) {
+        if(i === pageNumber) {
+          targetPage.style.color = '#57BBBF';
+          continue;
+        }
+        targetPage.style.color = 'black';
+      }
+    }
+  }
+
   switchLanguage(toLang: string): void {
-    // (document.getElementById("lang-img") as HTMLImageElement).src = `../../../assets/img/language/${this.data.language.value}.png`;
     this.data.language.next((toLang === 'FR') ? Language.FR : Language.EN);
     this.updateText();
+    this.links[5].name = (toLang === 'FR') ? 'Français' : 'English';
   }
 
   private updateText(): void {

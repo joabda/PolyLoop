@@ -23,10 +23,5 @@
     "link": "https://www.youtube.com/channel/UC1FRrcYS8QgwvWIGhyMs7DQ/featured?disable_polymer=1",
     "iconSrc": "../../../assets/img/social/youtube.png",
     "title": "Youtube"
-  },
-  {
-    "link": "mail:polyloop2020@gmail.com",
-    "iconSrc": "../../../assets/img/social/gmail.png",
-    "title": "Gmail"
   }
 ]

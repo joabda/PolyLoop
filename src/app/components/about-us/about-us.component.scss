@@ -20,6 +20,26 @@
     width: 30px;
 }
 
+/* Create two equal columns that floats next to each other */
+.column1-res {
+    float: left;
+    width: 68%;
+    padding: 10px;
+  }
+
+  .column2-res {
+    float: left;
+    width: 28%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row-res:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 @media screen and (max-width: 767px) {
     #center {
         width: 90vw;

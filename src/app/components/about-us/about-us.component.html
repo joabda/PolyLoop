@@ -1,23 +1,17 @@
 <div class="wrapper">
     <!-- Mission -->
-    <div class="card card-cascade wider reverse">
-        <!-- Card image -->
-        <div class="view view-cascade overlay">
-            <img class="card-img-top" src="../../../assets/img/airport.png" alt="Hyperloop tube rendered" id="tube">
-            <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-            </a>
+    <div class="row-res">
+        <div class="column1-res">
+            <img src="../../../assets/img/tube.png" alt="Hyperloop tube rendered" id="tube">
         </div>
-        <!-- Card content -->
-        <div class="card-body card-body-cascade text-center">
+        <div class="column2-res">
             <!-- Title -->
-            <h4 class="card-title"><strong>{{text.title}}</strong></h4>
+            <h4 class="card-title" style="font-size: xx-large; font-weight: 300;"><strong>{{text.title}}</strong></h4>
             <!-- Text -->
             <p class="card-text" *ngFor="let line of text.text">{{line}}<br></p>
         </div>
-    </div>
+      </div>
     <!-- Mission -->
-
 
     <!-- COMPETITION -->
     <section>
@@ -26,15 +20,13 @@
         <p class="px-5 mb-5 pb-3 lead grey-text text-center">{{text.introCompet}}</p>
 
         <!--Grid row-->
-        <div class="row">
+        <div class="row d-flex justify-content-center">
             <!--Grid column-->
-            <div class="col-md-4" style="margin-top: auto; margin-bottom: auto;">
+            <div class="col-md-4 offset-3" style="margin-top: auto; margin-bottom: auto;">
                 <!--Grid row-->
-                <div class="row mb-2" *ngFor="let item of col1">
-                    <div class="col-2">
+                <div class="row mb-2" style="text-align: center;" *ngFor="let item of col1">
+                    <div class="col-2" >
                         <img class="icon" [src]="item.iconSrc" fas>
-                    </div>
-                    <div class="col-10 text-left">
                         <h5 class="font-weight-bold">{{item.title}}</h5>
                         <p class="grey-text">{{item.details}}</p>
                     </div>
@@ -44,19 +36,17 @@
             <!--Grid column-->
 
             <!--Grid column-->
-            <div class="col-md-4" style="margin-top: auto; margin-bottom: auto;">
+            <!-- <div class="col-md-4" style="margin-top: auto; margin-bottom: auto;">
                 <img src="../../../assets/img/tube.png" alt="" class="z-depth-0" id="center">
-            </div>
+            </div> -->
             <!--Grid column-->
 
             <!--Grid column-->
             <div class="col-md-4" style="margin-top: auto; margin-bottom: auto;">
                 <!--Grid row-->
                 <div class="row mb-2" *ngFor="let item of col2">
-                    <div class="col-2">
+                    <div class="col-2" style="text-align: center;">
                         <img class="icon" [src]="item.iconSrc" fas>
-                    </div>
-                    <div class="col-10 text-left">
                         <h5 class="font-weight-bold">{{item.title}}</h5>
                         <p class="grey-text">{{item.details}}</p>
                     </div>
@@ -67,7 +57,6 @@
         </div>
         <!--Grid row-->
         <p class="px-5 mb-5 pb-3 lead grey-text text-center">{{text.moreInfo}}
-            <a href="https://www.spacex.com/hyperloop">https://www.spacex.com/hyperloop</a>
             <br>
             <a mdbBtn color="blue" class="waves-light" mdbWavesEffect href="/hyperloop">
                 <mdb-icon far icon="clone" class="left"></mdb-icon>

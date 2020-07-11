@@ -50,15 +50,16 @@
   .nav-but{
     color: black;
     display: table-cell;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: large;
-    padding-top: 30px;
+    padding-top: 55px;
     padding-left: 45px; // was 20px
     text-decoration: none;
     vertical-align: middle;
   }
 
   .nav-but:hover{
-    color: #af2dff
+    color: #57BBBF;
   }
 
   .nav-but-mobile {
@@ -71,15 +72,9 @@
     vertical-align: middle;
     width: 100%;
   }
-  
-  #lang-img {
-    padding-top: 25px;
-    margin-left: 30px;
-    width: 50px;
-  }
 
   #logo{
-    padding-top: 25px;
+    padding-top: 45px;
     width: 250px; 
   }
 

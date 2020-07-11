@@ -9,28 +9,28 @@
             "The Polyloop project is to create a new technical company at Polytechnique Montreal which aims to participate in the Hyperloop Pod Competition in California."
         ],
         "button": "Find out more", 
-        "comp": "The competition",
+        "comp": "Hyperloop",
         "introCompet": "In 2015, SpaceX announces the Hyperloop Pod Competition, a competition aimed at building the capsule that will travel the fastest in the SpaceX's tube.",
         "moreInfo": "For more information visit ",
         "features": [
             {
                 "title": "International",
-                "details": "For this competition, teams of students from around the world have been working on the concept of their capsules for more than a year. The best of them are allowed to build a prototype and the tester in the SpaceX tube.",
+                "details": "Bla1",
                 "iconSrc": "../../../assets/img/icons/international.png"
             },
             {
                 "title": "Prestigious",
-                "details": "The most prestigious universities in the world participate in the competition it is not just a university competition but a means to get your hands in the dough of futuristic transport.",
+                "details": "bla2",
                 "iconSrc": "../../../assets/img/icons/vip.png"
             },
             {
                 "title": "Experimental",
-                "details": "The competition establishes rules but leaves the freedom to present innovative ideas and promote an ideology of thought out of the box.",
+                "details": "bla3",
                 "iconSrc": "../../../assets/img/icons/experimental.png"
             },
             {
                 "title": "Creative",
-                "details": "In order to have the best concept possible sometimes you need to leave some place for you creativity.",
+                "details": "bla4",
                 "iconSrc": "../../../assets/img/icons/creative.png"
             }
         ]
@@ -45,23 +45,23 @@
             "Le projet Polyloop est de créer une nouvelle société technique à Polytechnique Montréal qui a pour but de participer à l’Hyperloop Pod Competition en Californie."
         ],
         "button": "En savoir plus",
-        "comp": "La competition",
+        "comp": "Hyperloop",
         "introCompet": "En 2015, SpaceX annonce le Hyperloop Pod Competition, une compétition ayant pour but de construire la capsule qui voyagera le plus rapidement dans le tube de SpaceX",
         "moreInfo": "Pour plus d'information visiter ",
         "features": [
             {
                 "title": "Internationale",
-                "details": "Pour cette compétition, des équipes d’étudiants de partout à travers le monde travaillent le concept de leur capsules pour plus d'un an. Les meilleurs d’entre eux ont eu l’autorisation de construire un prototype et le tester dans le tube de SpaceX.",
+                "details": "Petit text",
                 "iconSrc": "../../../assets/img/icons/international.png"
             },
             {
                 "title": "Prestigieuse",
-                "details": "Les plus prestigieuses universités du monde participent a la competition ce n'est pas juste une competition universitaire mais un moyen pour mettre les mains dans la pate du transport futuriste.",
+                "details": "Petit text",
                 "iconSrc": "../../../assets/img/icons/vip.png"
             },
             {
                 "title": "Expérimentale",
-                "details": "La compétition établit des régles mais laisse la liberté de présenter des idées innovantes et promouvois une idéologie de pensée out of the box.",
+                "details": "Petit text",
                 "iconSrc": "../../../assets/img/icons/experimental.png"
             },
             {
