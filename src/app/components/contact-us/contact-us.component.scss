@@ -20,9 +20,20 @@
     width: 46vw !important;
 }
 
+@media screen and (max-width: 1405px) {
+    #polymtl {
+        width: 40vw;
+    }
+    
+    #form {
+        width: 40vw !important;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     #polymtl {
         margin: 0;
+        margin-right: 0;;
         width: 100%;
     }
 
