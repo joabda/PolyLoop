@@ -4,7 +4,7 @@
     <section>
         <!--Section heading-->
         <h2 class="h1 py-5 font-weight-bold text-center">{{text.comp}}</h2>
-        <p class="px-5 mb-5 pb-3 lead grey-text text-center">{{text.introCompet}}</p>
+        <p class="px-5 mb-5 pb-3 lead grey-text text-center" id="us-text" *ngFor="let line of text.introCompet">{{line}} <br></p>
 
         <!--Grid row-->
         <div class="row d-flex justify-content-center">

@@ -33,6 +33,11 @@
     }
 }
 
+#us-text {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
 /* Create two equal columns that floats next to each other */
 .column1-res {
     float: left;
@@ -54,6 +59,11 @@
   }
 
 @media screen and (max-width: 767px) {
+    #us-text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
     #center {
         width: 90vw;
         margin-bottom: 10px;

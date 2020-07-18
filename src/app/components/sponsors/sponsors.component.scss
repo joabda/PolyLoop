@@ -32,3 +32,20 @@
 .card {
     border:none !important;
 }
+
+#partners-text {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+#download {
+    margin-bottom: 10vh;
+}
+
+@media screen and (max-width: 800px) {
+    #partners-text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+}

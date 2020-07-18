@@ -9,8 +9,12 @@
             "The Polyloop project is to create a new technical company at Polytechnique Montreal which aims to participate in the Hyperloop Pod Competition in California."
         ],
         "button": "Find out more", 
-        "comp": "Hyperloop",
-        "introCompet": "In 2015, SpaceX announces the Hyperloop Pod Competition, a competition aimed at building the capsule that will travel the fastest in the SpaceX's tube.",
+        "comp": "Who are We ?",
+        "introCompet":[
+            "PolyLoop is a new technical company at Polytechnique Montreal whose mission is to develop and build a Hyperloop capsule in order to participate in the international Hyperloop Pod Competition.",
+            "PolyLoop is the only technical company in Quebec that develops this technology.",
+            "Since January 2020, PolyLoop has enabled its members to develop their technical skills while leading them to change the world of transport."
+        ],
         "moreInfo": "For more information visit ",
         "features": [
             {
@@ -45,8 +49,12 @@
             "Le projet Polyloop est de créer une nouvelle société technique à Polytechnique Montréal qui a pour but de participer à l’Hyperloop Pod Competition en Californie."
         ],
         "button": "En savoir plus",
-        "comp": "Hyperloop",
-        "introCompet": "En 2015, SpaceX annonce le Hyperloop Pod Competition, une compétition ayant pour but de construire la capsule qui voyagera le plus rapidement dans le tube de SpaceX",
+        "comp": "Qui sommes Nous ?",
+        "introCompet": [
+            "PolyLoop est une nouvelle société technique à Polytechnique Montréal qui a comme mission de développer et de construire une capsule Hyperloop dans le but de participer à la compétition internationale Hyperloop Pod Competition.",
+            "PolyLoop est la seule société technique au Québec qui développe cette technologie.",
+            "Depuis janvier 2020, PolyLoop permet à ses membres de développer leurs compétences techniques tout en les amenant à changer le monde des transports." 
+        ],
         "moreInfo": "Pour plus d'information visiter ",
         "features": [
             {

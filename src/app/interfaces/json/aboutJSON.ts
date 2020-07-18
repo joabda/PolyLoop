@@ -5,7 +5,7 @@ export interface AboutJSON {
     text: string[],
     button: string,
     comp: string,
-    introCompet: string,
+    introCompet: string[],
     moreInfo: string,
     features: FeatureItem[]
 }
