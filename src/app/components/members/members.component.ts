@@ -6,6 +6,7 @@ import { Observable, Subscription } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { HotkeysService } from 'src/app/services/hotkeys/hotkeys.service';
 import { TeamJSON } from 'src/app/interfaces/json/teamJSON';
+import { Language } from 'src/app/enums/language';
 
 @Component({
   selector: 'app-members',
@@ -49,6 +50,10 @@ export class MembersComponent implements OnDestroy {
         subscribed.unsubscribe();
         this.subscriptions.pop();
     });
+  }
+
+  getTitle(): string {
+    return this.data.language.value === Language.FR ? "Notre incroyable équipe" : "Our amazing team"
   }
 
   // searchMember(): void {

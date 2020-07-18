@@ -1,19 +1,6 @@
 <div class="wrapper">
-    <!-- Mission -->
-    <div class="row-res">
-        <div class="column1-res">
-            <img src="../../../assets/img/tube.png" alt="Hyperloop tube rendered" id="tube">
-        </div>
-        <div class="column2-res">
-            <!-- Title -->
-            <h4 class="card-title" style="font-size: xx-large; font-weight: 300;"><strong>{{text.title}}</strong></h4>
-            <!-- Text -->
-            <p class="card-text" *ngFor="let line of text.text">{{line}}<br></p>
-        </div>
-      </div>
-    <!-- Mission -->
 
-    <!-- COMPETITION -->
+    <!-- US -->
     <section>
         <!--Section heading-->
         <h2 class="h1 py-5 font-weight-bold text-center">{{text.comp}}</h2>
@@ -25,7 +12,7 @@
             <div class="col-md-4 offset-3" style="margin-top: auto; margin-bottom: auto;">
                 <!--Grid row-->
                 <div class="row mb-2" style="text-align: center;" *ngFor="let item of col1">
-                    <div class="col-2" >
+                    <div class="col-2">
                         <img class="icon" [src]="item.iconSrc" fas>
                         <h5 class="font-weight-bold">{{item.title}}</h5>
                         <p class="grey-text">{{item.details}}</p>
@@ -37,8 +24,8 @@
 
             <!--Grid column-->
             <!-- <div class="col-md-4" style="margin-top: auto; margin-bottom: auto;">
-                <img src="../../../assets/img/tube.png" alt="" class="z-depth-0" id="center">
-            </div> -->
+                    <img src="../../../assets/img/tube.png" alt="" class="z-depth-0" id="center">
+                </div> -->
             <!--Grid column-->
 
             <!--Grid column-->
@@ -64,4 +51,19 @@
             </a>
         </p>
     </section>
+    <!-- US -->
+
+    <!-- Mission -->
+    <div class="row-res">
+        <div class="column1-res">
+            <img src="../../../assets/img/tube.png" alt="Hyperloop tube rendered" id="tube">
+        </div>
+        <div class="column2-res" id="text-mission">
+            <!-- Title -->
+            <h4 class="card-title"><strong>{{text.title}}</strong></h4>
+            <!-- Text -->
+            <p class="card-text" *ngFor="let line of text.text">{{line}}<br><br></p>
+        </div>
+    </div>
+    <!-- Mission -->
 </div>

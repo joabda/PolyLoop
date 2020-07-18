@@ -4,7 +4,7 @@
 }
 
 #tube {
-    height: 70vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -18,6 +18,19 @@
 
 .icon {
     width: 30px;
+}
+
+#text-mission{
+    h4 {
+        font-size: 5rem;
+        font-weight: 300; 
+        text-align: right;
+    }
+
+    p {
+        font-size: 1.30vw; 
+        text-align: justify;
+    }
 }
 
 /* Create two equal columns that floats next to each other */
