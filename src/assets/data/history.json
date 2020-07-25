@@ -1,6 +1,6 @@
 [
     {
-        "question": "Why is it so great?",
+        "question": "Hyperloop",
         "features": [
             {
                 "title": "New",
@@ -14,6 +14,15 @@
                 "title": "Electric",
                 "detail": "All fully electric, which can be powered by solar panels positioned above the tube. This technology would therefore be the fastest means of transport on Earth with the smallest environmental impact."
             }
+        ],
+        "comp": "Competition",
+        "compElements": [
+            "In 2015, SpaceX canceled the Hyperloop Pod Competition a competition to build the capsule that will travel the fastest in SpaceX's tube.",
+            "For this first competition, teams of students from all over the world gathered at a weekend in 2016 to share their capsule design.",
+            "The best of them were allowed to build a prototype and participate in the first competition in January 2017.",
+            "They were able to go to SpaceX's California offices and test their capsule in SpaceX's test tube.",
+            "Depui, three other competitions took place in August 2017, January 2018 and July 2019.",
+            "A competition is planned in the coming years."
         ],
         "events": [
             {
@@ -47,7 +56,7 @@
         ]
     },
     {
-        "question": "Pourquoi est-ce si grand?",
+        "question": "Hyperloop",
         "features": [
             {
                 "title": "Nouveau",
@@ -61,6 +70,15 @@
                 "title": "Électrique",
                 "detail": "Le tout entièrement électrique, pouvant être alimenté par des panneaux solaires positionnés au-dessus du tube. Cette technologie serait donc le moyen de transport le plus rapide sur Terre ayant le plus petit impact environnemental."
             }
+        ],
+        "comp": "Compétition",
+        "compElements": [
+            "En 2015, SpaceX annone le Hyperloop Pod Competition une compétition ayant pour but de construire la capsule qui voyagera le plus rapidement dans le tube de SpaceX.",
+            "Pour cette prémiere compétition, des équipes d'étudiants de partout a travers le monde se sont réunies lors d'un weekend en 2016 afin de partager leur design de capsule.",
+            "Les meilleurs d'entre eux ont eu l'autorisation de construire un prototype et de participer a la prémiere compétition en janvier 2017.",
+            "Ils ont pu se rendre aux bureaux de SpaceX en Californie et tester leur capsule dans le tube d'essaie de SpaceX.",
+            "Depui, trois autres compétitions ont eu lieu en aout 2017, janvier 2018 et juillet 2019.",
+            "Une compétition est prévue dans les annees a vernir."
         ],
         "events": [
             {

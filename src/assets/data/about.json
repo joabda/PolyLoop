@@ -18,24 +18,19 @@
         "moreInfo": "For more information visit ",
         "features": [
             {
-                "title": "International",
-                "details": "Bla1",
-                "iconSrc": "../../../assets/img/icons/international.png"
+                "title": "Fast",
+                "details": "A Hyperloop capsule could reach speeds in excess of 1,000 km/h, making it the fastest means of transport on Earth.",
+                "iconSrc": "../../../assets/img/icons/clock.png"
             },
             {
-                "title": "Prestigious",
-                "details": "bla2",
-                "iconSrc": "../../../assets/img/icons/vip.png"
+                "title": "Safe",
+                "details": "The safety and comfort of future passengers is the number one priority in the development of technology.",
+                "iconSrc": "../../../assets/img/icons/security.png"
             },
             {
-                "title": "Experimental",
-                "details": "bla3",
-                "iconSrc": "../../../assets/img/icons/experimental.png"
-            },
-            {
-                "title": "Creative",
-                "details": "bla4",
-                "iconSrc": "../../../assets/img/icons/creative.png"
+                "title": "Eco-responsible",
+                "details": "A Hyperloop capsule uses only electrical energy that can be recharged by different renewable energy sources.",
+                "iconSrc": "../../../assets/img/icons/eco.png"
             }
         ]
     },
@@ -51,31 +46,24 @@
         "button": "En savoir plus",
         "comp": "Qui sommes Nous ?",
         "introCompet": [
-            "PolyLoop est une nouvelle société technique à Polytechnique Montréal qui a comme mission de développer et de construire une capsule Hyperloop dans le but de participer à la compétition internationale Hyperloop Pod Competition.",
-            "PolyLoop est la seule société technique au Québec qui développe cette technologie.",
-            "Depuis janvier 2020, PolyLoop permet à ses membres de développer leurs compétences techniques tout en les amenant à changer le monde des transports." 
+            "PolyLoop est une nouvelle société technique à Polytechnique Montréal qui a comme mission de développer et de construire une capsule Hyperloop dans le but de participer à la compétition internationale Hyperloop Pod Competition. PolyLoop est la seule société technique au Québec qui développe cette technologie. Depuis janvier 2020, PolyLoop permet à ses membres de développer leurs compétences techniques tout en les amenant à changer le monde des transports." 
         ],
         "moreInfo": "Pour plus d'information visiter ",
         "features": [
             {
-                "title": "Internationale",
-                "details": "Petit text",
-                "iconSrc": "../../../assets/img/icons/international.png"
+                "title": "Rapide",
+                "details": "Une capsule Hyperloop pourrait atteindre des vitesses au-delà de 1 000 km\\h, étant ainsi le moyen de transport le plus rapide sur Terre.",
+                "iconSrc": "../../../assets/img/icons/clock.png"
             },
             {
-                "title": "Prestigieuse",
-                "details": "Petit text",
-                "iconSrc": "../../../assets/img/icons/vip.png"
+                "title": "Sécuritaire",
+                "details": "La sécurité et le confort des futurs passagers est la priorité numéro 1 du développement de la technologie.",
+                "iconSrc": "../../../assets/img/icons/security.png"
             },
             {
-                "title": "Expérimentale",
-                "details": "Petit text",
-                "iconSrc": "../../../assets/img/icons/experimental.png"
-            },
-            {
-                "title": "Créative",
-                "details": "test4",
-                "iconSrc": "../../../assets/img/icons/creative.png"
+                "title": "Eco-responsable",
+                "details": "Une capsule Hyperloop n'utilise que l'énergie électrique pouvant etre rechargée par différentes sources d'énergie renouvelable.",
+                "iconSrc": "../../../assets/img/icons/eco.png"
             }
         ]
     }

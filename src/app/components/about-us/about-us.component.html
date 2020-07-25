@@ -1,55 +1,28 @@
 <div class="wrapper">
-
     <!-- US -->
-    <section>
+    <section style="margin-bottom: 20vh;">
         <!--Section heading-->
         <h2 class="h1 py-5 font-weight-bold text-center">{{text.comp}}</h2>
-        <p class="px-5 mb-5 pb-3 lead grey-text text-center" id="us-text" *ngFor="let line of text.introCompet">{{line}} <br></p>
+        <p class="px-5 mb-5 pb-3 lead grey-text text-center" id="us-text" *ngFor="let line of text.introCompet">{{line}}
+            <br></p>
 
         <!--Grid row-->
-        <div class="row d-flex justify-content-center">
-            <!--Grid column-->
-            <div class="col-md-4 offset-3" style="margin-top: auto; margin-bottom: auto;">
-                <!--Grid row-->
-                <div class="row mb-2" style="text-align: center;" *ngFor="let item of col1">
-                    <div class="col-2">
-                        <img class="icon" [src]="item.iconSrc" fas>
-                        <h5 class="font-weight-bold">{{item.title}}</h5>
-                        <p class="grey-text">{{item.details}}</p>
-                    </div>
-                </div>
-                <!--Grid row-->
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <!-- <div class="col-md-4" style="margin-top: auto; margin-bottom: auto;">
-                    <img src="../../../assets/img/tube.png" alt="" class="z-depth-0" id="center">
-                </div> -->
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-4" style="margin-top: auto; margin-bottom: auto;">
-                <!--Grid row-->
-                <div class="row mb-2" *ngFor="let item of col2">
-                    <div class="col-2" style="text-align: center;">
-                        <img class="icon" [src]="item.iconSrc" fas>
-                        <h5 class="font-weight-bold">{{item.title}}</h5>
-                        <p class="grey-text">{{item.details}}</p>
-                    </div>
-                </div>
-                <!--Grid row-->
-            </div>
-            <!--Grid column-->
+        <div class="column-cust" *ngFor="let img of text.features">
+            <img [src]="img.iconSrc" alt="{{img.title}}">
         </div>
         <!--Grid row-->
-        <p class="px-5 mb-5 pb-3 lead grey-text text-center">{{text.moreInfo}}
-            <br>
-            <a mdbBtn color="blue" class="waves-light" mdbWavesEffect href="/hyperloop">
-                <mdb-icon far icon="clone" class="left"></mdb-icon>
-                {{text.button}}
-            </a>
-        </p>
+
+        <!--Grid row-->
+        <div class="column-cust" *ngFor="let title of text.features">
+            <h3>{{title.title}}</h3>
+        </div>
+        <!--Grid row-->
+
+        <!--Grid row-->
+        <div class="column-cust" *ngFor="let details of text.features">
+            <p>{{details.details}}</p>
+        </div>
+        <!--Grid row-->
     </section>
     <!-- US -->
 
