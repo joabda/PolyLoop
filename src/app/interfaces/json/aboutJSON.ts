@@ -7,5 +7,6 @@ export interface AboutJSON {
     comp: string,
     introCompet: string[],
     moreInfo: string,
+    first: string,
     features: FeatureItem[]
 }

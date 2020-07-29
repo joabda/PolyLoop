@@ -1,10 +1,21 @@
 <div class="wrapper">
     <!-- US -->
-    <section style="margin-bottom: 20vh;">
+    <section>
         <!--Section heading-->
         <h2 class="h1 py-5 font-weight-bold text-center">{{text.comp}}</h2>
         <p class="px-5 mb-5 pb-3 lead grey-text text-center" id="us-text" *ngFor="let line of text.introCompet">{{line}}
             <br></p>
+
+        <!--Grid row-->
+        <div class="d-flex justify-content-center" style="width: 100%;">
+            <img src="../../../assets/img/icons/first.png" alt="First Medal">
+        </div>
+        <!--Grid row-->
+        <!--Grid row-->
+        <div class="d-flex justify-content-center" style="width: 100%; margin-bottom: 5vh;">
+            <h3>{{text.first}}</h3>
+        </div>
+        <!--Grid row-->
 
         <!--Grid row-->
         <div class="column-cust" *ngFor="let img of text.features">
@@ -19,7 +30,7 @@
         <!--Grid row-->
 
         <!--Grid row-->
-        <div class="column-cust" *ngFor="let details of text.features">
+        <div class="column-cust" *ngFor="let details of text.features" style="margin-bottom: 20vh;">
             <p>{{details.details}}</p>
         </div>
         <!--Grid row-->
