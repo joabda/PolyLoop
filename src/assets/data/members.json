@@ -2,6 +2,7 @@
     [
         {
             "subTeamName": "Executive",
+            "description": " ",
             "members": [
                 {
                     "name": "François Carrier",
@@ -30,6 +31,7 @@
         },
         {
             "subTeamName": "Propulsion",
+            "description": " ",
             "members": [
                 {
                     "name": "Jérémie Rivière",
@@ -61,6 +63,7 @@
         },
         {
             "subTeamName": "Energy",
+            "description": " ",
             "members": [
                 {
                     "name": "Axelle Legoassé-Mouneu",
@@ -98,6 +101,7 @@
         },
         {
             "subTeamName": "Braking",
+            "description": " ",
             "members": [
                 {
                     "name": "Tommy Landry",
@@ -120,6 +124,7 @@
         },
         {
             "subTeamName": "Systems and electronics",
+            "description": " ",
             "members": [
                 {
                     "name": "Carl-andré Harraka",
@@ -173,6 +178,7 @@
         },
         {
             "subTeamName": "Structure and aero",
+            "description": " ",
             "members": [
                 {
                     "name": "Frédéric Auger",
@@ -206,6 +212,7 @@
     [
         {
             "subTeamName": "Executif",
+            "description": " ",
             "members": [
                 {
                     "name": "François Carrier",
@@ -234,6 +241,7 @@
         },
         {
             "subTeamName": "Propulsion",
+            "description": " ",
             "members": [
                 {
                     "name": "Jérémie Rivière",
@@ -265,6 +273,7 @@
         },
         {
             "subTeamName": "Alimentation",
+            "description": " ",
             "members": [
                 {
                     "name": "Axelle Legoassé-Mouneu",
@@ -302,6 +311,7 @@
         },
         {
             "subTeamName": "Freinage",
+            "description": " ",
             "members": [
                 {
                     "name": "Tommy Landry",
@@ -324,6 +334,7 @@
         },
         {
             "subTeamName": "Systèmes et électronique",
+            "description": " ",
             "members": [
                 {
                     "name": "Carl-andré Harraka",
@@ -378,6 +389,7 @@
         },
         {
             "subTeamName": "Structure et aéro",
+            "description": " ",
             "members": [
                 {
                     "name": "Frédéric Auger",
