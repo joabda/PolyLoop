@@ -73,12 +73,9 @@
         ],
         "comp": "Compétition",
         "compElements": [
-            "En 2015, SpaceX annone le Hyperloop Pod Competition une compétition ayant pour but de construire la capsule qui voyagera le plus rapidement dans le tube de SpaceX.",
-            "Pour cette prémiere compétition, des équipes d'étudiants de partout a travers le monde se sont réunies lors d'un weekend en 2016 afin de partager leur design de capsule.",
-            "Les meilleurs d'entre eux ont eu l'autorisation de construire un prototype et de participer a la prémiere compétition en janvier 2017.",
-            "Ils ont pu se rendre aux bureaux de SpaceX en Californie et tester leur capsule dans le tube d'essaie de SpaceX.",
-            "Depui, trois autres compétitions ont eu lieu en aout 2017, janvier 2018 et juillet 2019.",
-            "Une compétition est prévue dans les annees a vernir."
+            "En 2015, SpaceX annone le Hyperloop Pod Competition, une compétition ayant pour but de construire la capsule qui voyagera le plus rapidement dans le tube de SpaceX. Pour cette prémiere compétition, des équipes d'étudiants de partout a travers le monde se sont réunies lors d'un weekend en 2016 afin de partager leur design de capsule. Les meilleurs d'entre eux ont eu l'autorisation de construire un prototype et de participer a la première compétition en janvier 2017. Ils ont pu se rendre en Californie afin de tester leur capsule dans le tube d'essaie de SpaceX. Depuis, trois autres compétitions ont eu lieu et plusieurs autres compétitions sont en développement. ",
+            
+            
         ],
         "events": [
             {
@@ -90,7 +87,7 @@
             },
             {
                 "date": "Janvier 2015",
-                "title": "Un Titre....",
+                "title": "Première compétition",
                 "text": "Annonce de la construction d’une piste d’essai pour capsules Hyperloop ouverte aux entreprises et étudiants ",
                 "more": "bla 1",
                 "imgSrc": ""
