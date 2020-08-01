@@ -34,12 +34,14 @@
     {
         "title": "NOTRE MISSION",
         "text": [
-            "Notre mission est tout d’abord d’offrir une opportunité aux étudiants de Polytechnique de s’impliquer dans un nouveau projet. Un projet avant-gardiste, novateur et complètement différent des autres sociétés techniques à Polytechnique de Montréal. En effet, Polyloop est la seule société technique qui travaille sur un projet complètement nouveau abordant une technologie constamment en développement, innovatrice et verte. À long terme, nous voulons que ce projet perdure dans le temps et qu’il devienne une société technique respectée, non seulement à Polytechnique, mais aussi internationalement. Le projet Polyloop est de créer une nouvelle société technique à Polytechnique Montréal qui a pour but de participer à l’Hyperloop Pod Competition en Californie."
+            "Notre mission est de concevoir une capsule Hyperloop afin de participer à la prestigieuse compétition internationale Hyperloop Pod Competition. Nous offrons ainsi l’opportunité aux étudiants de Polytechnique Montréal de s’impliquer dans un projet innovant et d’envergure en leur permettant de relever des défis technologiques, enrichissant ainsi leur expérience technique. "
         ],
         "button": "En savoir plus",
-        "comp": "Qui sommes Nous ?",
+        "comp": "QUI SOMMES NOUS?",
         "introCompet": [
-            "PolyLoop est une nouvelle société technique à Polytechnique Montréal qui a comme mission de développer et de construire une capsule Hyperloop dans le but de participer à la compétition internationale Hyperloop Pod Competition. PolyLoop est la seule société technique au Québec qui développe cette technologie. Depuis janvier 2020, PolyLoop permet à ses membres de développer leurs compétences techniques tout en les amenant à changer le monde des transports." 
+            "PolyLoop est une équipe d'étudiant de Polytechnique Montréal qui a  pour but de développer et de construire une capsule Hyperloop afin de participer à la compétition internationale Hyperloop Pod Competition. PolyLoop est la première et la seule équipe au Québec qui développe cette technologie. Depuis janvier 2020, PolyLoop permet à ses membres de développer leurs compétences techniques tout en les amenant à changer le monde des transports."
+            
+            "La technologie Hyperloop, proposée en 2013 par Elon Musk, utilise un système de lévitation magnétique propulsé par induction linéaire, le tout dans un tube dépressurisé. Ce système permet de réduire la friction au maximum et donc d'atteindre des vitesses impressionnantes."
         ],
         "moreInfo": "Pour plus d'information visiter ",
         "first": "Première équipe au Québec",
@@ -55,8 +57,8 @@
                 "iconSrc": "../../../assets/img/icons/security.png"
             },
             {
-                "title": "Eco-responsable",
-                "details": "Une capsule Hyperloop n'utilise que l'énergie électrique pouvant etre rechargée par différentes sources d'énergie renouvelable.",
+                "title": "Éco-responsable",
+                "details": "Le système Hyperloop n'utilise que l'énergie électrique pouvant être alimenté par différentes sources d'énergie renouvelable.",
                 "iconSrc": "../../../assets/img/icons/eco.png"
             }
         ]
