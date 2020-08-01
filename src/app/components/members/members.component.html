@@ -22,6 +22,7 @@
             veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p> -->
         <!-- Grid row -->
         <div *ngFor="let team of teams">
+            <a name="{{team.subTeamName}}"></a>
             <h2 class="subteam d-flex justify-content-center">{{team.subTeamName}}</h2>
             <h5>{{team.description}}</h5>
             <div *ngFor="let member of team.members; let i = index" id="members-display">

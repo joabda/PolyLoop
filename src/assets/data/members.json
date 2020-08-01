@@ -2,7 +2,7 @@
     [
         {
             "subTeamName": "Executive",
-            "description": " ",
+            "description": "Description EN Executive",
             "members": [
                 {
                     "name": "François Carrier",
@@ -26,13 +26,25 @@
                     "pictureURL": "../../../assets/img/members/avatar.png",
                     "role": "Treasurer",
                     "linkedIn": "eloi-mgz-515b24170"
+                },
+                {
+                    "name": "Charlotte Michaud-Tardif",
+                    "pictureURL": "../../../assets/img/members/Charlotte-Michaud-Tardif.jpg",
+                    "role": "",
+                    "linkedIn": "charlotte-michaud-tardif-5a26a91a0"
                 }
             ]
         },
         {
             "subTeamName": "Propulsion",
-            "description": " ",
+            "description": "Description EN Propulsion",
             "members": [
+                {
+                    "name": "Vincent Kenaan",
+                    "pictureURL": "../../../assets/img/members/avatar.png",
+                    "role": "",
+                    "linkedIn": "vincent-keenan-7789b21a6"
+                },
                 {
                     "name": "Jérémie Rivière",
                     "pictureURL": "../../../assets/img/members/avatar.png",
@@ -63,7 +75,7 @@
         },
         {
             "subTeamName": "Energy",
-            "description": " ",
+            "description": "Description EN Energy",
             "members": [
                 {
                     "name": "Axelle Legoassé-Mouneu",
@@ -96,12 +108,17 @@
                     "pictureURL": "../../../assets/img/members/avatar.png",
                     "role": "",
                     "linkedIn": "reine-costantine-27a8361b0/"
+                },
+                {
+                    "name": "Mark Noginsky",
+                    "pictureURL": "../../../assets/img/members/avatar.png",
+                    "role": ""
                 }
             ]
         },
         {
             "subTeamName": "Braking",
-            "description": " ",
+            "description": "Description EN Braking",
             "members": [
                 {
                     "name": "Tommy Landry",
@@ -124,7 +141,7 @@
         },
         {
             "subTeamName": "Systems and electronics",
-            "description": " ",
+            "description": "Description EN Systems",
             "members": [
                 {
                     "name": "Carl-andré Harraka",
@@ -173,12 +190,17 @@
                     "name": "Joe Abdo",
                     "pictureURL": "../../../assets/img/members/avatar.png",
                     "role": ""
+                },
+                {
+                    "name": "Nezha Zahri",
+                    "pictureURL": "../../../assets/img/members/avatar.png",
+                    "role": "Team Lead"
                 }
             ]
         },
         {
             "subTeamName": "Structure and aero",
-            "description": " ",
+            "description": "Description EN Structure",
             "members": [
                 {
                     "name": "Frédéric Auger",
@@ -196,15 +218,15 @@
                     "role": "Manager"
                 },
                 {
-                    "name": "Ève Chouinard ",
+                    "name": "Ève Chouinard",
                     "pictureURL": "../../../assets/img/members/avatar.png",
                     "role": "Secretary"
                 },
                 {
-                    "name": "Charlotte Michaud-Tardif",
-                    "pictureURL": "../../../assets/img/members/Charlotte-Michaud-Tardif.jpg",
+                    "name": "Frantzline Clairvil",
+                    "pictureURL": "../../../assets/img/members/avatar.png",
                     "role": "",
-                    "linkedIn": "charlotte-michaud-tardif-5a26a91a0"
+                    "linkedIn": "frantzline-clairvil-04427a17a"
                 }
             ]
         }
@@ -212,7 +234,7 @@
     [
         {
             "subTeamName": "Executif",
-            "description": " ",
+            "description": "Description FR Executif",
             "members": [
                 {
                     "name": "François Carrier",
@@ -236,13 +258,25 @@
                     "pictureURL": "../../../assets/img/members/avatar.png",
                     "role": "Trésorier",
                     "linkedIn": "eloi-mgz-515b24170"
+                },
+                {
+                    "name": "Charlotte Michaud-Tardif",
+                    "pictureURL": "../../../assets/img/members/Charlotte-Michaud-Tardif.jpg",
+                    "role": "",
+                    "linkedIn": "charlotte-michaud-tardif-5a26a91a0"
                 }
             ]
         },
         {
             "subTeamName": "Propulsion",
-            "description": " ",
+            "description": "Description FR Propulsion",
             "members": [
+                {
+                    "name": "Vincent Kenaan",
+                    "pictureURL": "../../../assets/img/members/avatar.png",
+                    "role": "",
+                    "linkedIn": "vincent-keenan-7789b21a6"
+                },
                 {
                     "name": "Jérémie Rivière",
                     "pictureURL": "../../../assets/img/members/avatar.png",
@@ -273,7 +307,7 @@
         },
         {
             "subTeamName": "Alimentation",
-            "description": " ",
+            "description": "Description FR Alimentation",
             "members": [
                 {
                     "name": "Axelle Legoassé-Mouneu",
@@ -306,12 +340,17 @@
                     "pictureURL": "../../../assets/img/members/Reine-Costantine.jpg",
                     "role": "",
                     "linkedIn": "reine-costantine-27a8361b0/"
+                },
+                {
+                    "name": "Mark Noginsky",
+                    "pictureURL": "../../../assets/img/members/avatar.png",
+                    "role": ""
                 }
             ]
         },
         {
             "subTeamName": "Freinage",
-            "description": " ",
+            "description": "Description FR Freinage",
             "members": [
                 {
                     "name": "Tommy Landry",
@@ -334,7 +373,7 @@
         },
         {
             "subTeamName": "Systèmes et électronique",
-            "description": " ",
+            "description": "Description FR Systemes",
             "members": [
                 {
                     "name": "Carl-andré Harraka",
@@ -384,12 +423,17 @@
                     "pictureURL": "../../../assets/img/members/avatar.png",
                     "role": "",
                     "linkedIn": "joe-abdo"
+                },
+                {
+                    "name": "Nezha Zahri",
+                    "pictureURL": "../../../assets/img/members/avatar.png",
+                    "role": "Chef d'équipe"
                 }
             ]
         },
         {
             "subTeamName": "Structure et aéro",
-            "description": " ",
+            "description": "Description FR Structure",
             "members": [
                 {
                     "name": "Frédéric Auger",
@@ -412,10 +456,10 @@
                     "role": "Secrétaire"
                 },
                 {
-                    "name": "Charlotte Michaud-Tardif",
-                    "pictureURL": "../../../assets/img/members/Charlotte-Michaud-Tardif.jpg",
+                    "name": "Frantzline Clairvil",
+                    "pictureURL": "../../../assets/img/members/avatar.png",
                     "role": "",
-                    "linkedIn": "charlotte-michaud-tardif-5a26a91a0"
+                    "linkedIn": "frantzline-clairvil-04427a17a"
                 }
             ]
         }
